@@ -1,2 +1,0 @@
-/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/5c4yp4p4/x86_64/_deps/oboe-src/CMakeLists.txt
-/Users/anton/AntigravityProjects/KaossEffect/app/src/main/cpp/CMakeLists.txt
