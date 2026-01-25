@@ -5,9 +5,9 @@
 ## Screenshots
 *Main interface with XY pad and effect controls*
 
-![](images/kaosseffect1.png)
+<img src="images/kaosseffect1.png" height="640"/>
 
-![](images/kaosseffect2.png)
+<img src="images/kaosseffect2.png" height="640"/>
 
 ## Features
 
