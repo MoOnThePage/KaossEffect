@@ -1,0 +1,787 @@
+2026-01-25 17:01:09.762  1340-2540  AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c0c88 : 52(307747 size) total buffers - 0(0 size) used buffers - 11/326 (recycle/alloc) - 315/326 (fetch/transfer)
+2026-01-25 17:01:09.765  1340-2540  AidlBufferPoolAcc       media.swcodec                        D  evictor expired: 1, evicted: 1
+2026-01-25 17:01:10.418  1068-1977  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  CheckAllSpeakers: get ctl [PCM Source] = 9, expects 9
+2026-01-25 17:01:10.418  1068-1977  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  CheckAllSpeakers: get ctl [R PCM Source] = 9, expects 9
+2026-01-25 17:01:10.423  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetImpedances: DSP1 Protection 5f210 RE_AFTER_TR_RES Impedance: 0xffffa8 ==> 11995.4 Ohms
+2026-01-25 17:01:10.424  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetImpedances: R DSP1 Protection 5f210 RE_AFTER_TR_RES Impedance: 0xffff2f ==> 11995.3 Ohms
+2026-01-25 17:01:10.425  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetTemperatures: DSP1 Protection 5f21f MAX_TEMP Max temp: 0x1918fc ==> 100.39 C
+2026-01-25 17:01:10.426  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetTemperatures: R DSP1 Protection 5f21f MAX_TEMP Max temp: 0x1b5a1c ==> 109.408 C
+2026-01-25 17:01:10.428  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetExcursions: DSP1 Protection 5f21f MAX_EXC Max exc: 0x46665 ==> 0.549997 mm
+2026-01-25 17:01:10.429  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetExcursions: R DSP1 Protection 5f21f MAX_EXC Max exc: 0x3ffff ==> 0.499998 mm
+2026-01-25 17:01:10.430  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetHeartBeats: DSP1 Protection 1820d6 HALO_HEARTBEAT dsp heartbeat = 0x20172c
+2026-01-25 17:01:10.431  1068-1977  AHal::Cs35l43Health     and...rdware.audio.service-aidl.aoc  I  GetHeartBeats: R DSP1 Protection 1820d6 HALO_HEARTBEAT dsp heartbeat = 0x2dcd5e
+2026-01-25 17:01:10.767  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  Creating message to get link statistics; iface = 47
+2026-01-25 17:01:10.876  3016-3121  ImpulseConnection       com...le.android.pixelsystemservice  D  timeout didn't happen: com.google.android.apps.turbo
+2026-01-25 17:01:10.885  3016-4300  TemperatureStateSource  com...le.android.pixelsystemservice  D  sequence=266264 actualDelay=10001
+2026-01-25 17:01:10.889  3016-4300  TemperatureStateSource  com...le.android.pixelsystemservice  D  Reading temperature: sequence=266265
+2026-01-25 17:01:10.908  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 0 per_rate_size 32, data_rem_len 1152
+2026-01-25 17:01:10.910  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 1 per_rate_size 32, data_rem_len 1120
+2026-01-25 17:01:10.910  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 2 per_rate_size 32, data_rem_len 1088
+2026-01-25 17:01:10.910  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 3 per_rate_size 32, data_rem_len 1056
+2026-01-25 17:01:10.910  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 4 per_rate_size 32, data_rem_len 1024
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 5 per_rate_size 32, data_rem_len 992
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 6 per_rate_size 32, data_rem_len 960
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 7 per_rate_size 32, data_rem_len 928
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 8 per_rate_size 32, data_rem_len 896
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 9 per_rate_size 32, data_rem_len 864
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 10 per_rate_size 32, data_rem_len 832
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 11 per_rate_size 32, data_rem_len 800
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 12 per_rate_size 32, data_rem_len 768
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 13 per_rate_size 32, data_rem_len 736
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 14 per_rate_size 32, data_rem_len 704
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 15 per_rate_size 32, data_rem_len 672
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 16 per_rate_size 32, data_rem_len 640
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 17 per_rate_size 32, data_rem_len 608
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 18 per_rate_size 32, data_rem_len 576
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 19 per_rate_size 32, data_rem_len 544
+2026-01-25 17:01:10.911  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 20 per_rate_size 32, data_rem_len 512
+2026-01-25 17:01:10.912  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 21 per_rate_size 32, data_rem_len 480
+2026-01-25 17:01:10.912  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 22 per_rate_size 32, data_rem_len 448
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 23 per_rate_size 32, data_rem_len 416
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 24 per_rate_size 32, data_rem_len 384
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 25 per_rate_size 32, data_rem_len 352
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 26 per_rate_size 32, data_rem_len 320
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 27 per_rate_size 32, data_rem_len 288
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 28 per_rate_size 32, data_rem_len 256
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 29 per_rate_size 32, data_rem_len 224
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 30 per_rate_size 32, data_rem_len 192
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 31 per_rate_size 32, data_rem_len 160
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 32 per_rate_size 32, data_rem_len 128
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 33 per_rate_size 32, data_rem_len 96
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 34 per_rate_size 32, data_rem_len 64
+2026-01-25 17:01:10.913  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 35 per_rate_size 32, data_rem_len 32
+2026-01-25 17:01:10.914  1629-1629  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-MODEL: model_input: [33333.00 29895.00 29626.00 31030.00 31802.00 31493.00 32522.00 29430.00 ]
+2026-01-25 17:01:10.916  1629-1629  native                  and...ardware.thermal-service.pixel  I  I0000 00:00:1769353270.914730    1629 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+2026-01-25 17:01:10.916  1629-1629  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-MODEL: model_output: [30547.8 ]
+2026-01-25 17:01:10.916  1629-1629  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-MODEL: predicted_value: [30547.8 ]
+2026-01-25 17:01:10.919  1139-1139  libbinder....hreadState ven...oogle.wifi_ext-service-vendor  E  binder thread pool (1 threads) starved for 151 ms
+2026-01-25 17:01:10.920  1629-1629  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN:30.1914 raw data: VIRTUAL-SKIN:30191.4 VIRTUAL-SKIN-EQ:30191.4 VIRTUAL-SKIN-LEGACY:31151.3 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:603.43 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:30547.8 VIRTUAL-SKIN-MODEL-CLAMPED:30547.8 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-603.43 VIRTUAL-SKIN-MODEL-UPDATED:30191.4 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:30547.8 VIRTUAL-SKIN-SUB-0:31151.3 VIRTUAL-SKIN-SUB-1:30928.8 VIRTUAL-SKIN-SUB-2:30728.2 VIRTUAL-SKIN-SUB-3:30898.2 VIRTUAL-SKIN-SUB-4:30527.6 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 charging_therm:33333 disp0_therm:29895 flash_therm:29626 north_therm:31030 quiet_therm:31802 rfpa_therm:31493 soc_therm:32522 usb_pwr_therm:29430
+2026-01-25 17:01:10.922  3016-4300  TemperatureStateSource  com...le.android.pixelsystemservice  D  getDeviceTemperatures: sequence=266265 deviceTemperatureType=3 temperatureSource=0 temperatures=[30.191406]
+2026-01-25 17:01:10.922  3016-4300  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:10.924  3016-3340  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776858 block
+2026-01-25 17:01:10.924  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  Getting cached scan results, iface handle = 0xb400007baf379010
+2026-01-25 17:01:10.925  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  E  Creating message to get cached scan results
+2026-01-25 17:01:10.925  3016-4300  TemperatureStateSource  com...le.android.pixelsystemservice  D  sequence=266265 waitTime=10000
+2026-01-25 17:01:10.932  1629-1629  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN:30.1914 raw data: VIRTUAL-SKIN:30191.4
+2026-01-25 17:01:10.935  3016-3340  TemperatureStateSource  com...le.android.pixelsystemservice  I  temperature was set
+2026-01-25 17:01:10.940  3016-3340  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:10.940  3016-3340  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388392
+2026-01-25 17:01:10.940  3016-3340  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776858 block
+2026-01-25 17:01:10.943  3016-3340  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776859 block
+2026-01-25 17:01:10.944  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  In GetCachedScanResultsCommand::handleResponse
+2026-01-25 17:01:10.948  3016-3340  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776859 block
+2026-01-25 17:01:10.966 15636-16095 Turbo.Devi...anagerImpl com.google.android.apps.turbo        W  applyLeversWithMaintenanceWindow: ignore the same request
+2026-01-25 17:01:11.000  1668-2689  WifiClient...579:wlan0] system_server                        D  updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=780 freq=5180 RxLinkSpeed=650
+2026-01-25 17:01:11.007  1668-2689  WifiDataStall           system_server                        D  tx tput in kbps: 697582
+2026-01-25 17:01:11.007  1668-2689  WifiDataStall           system_server                        D  rx tput in kbps: 611914
+2026-01-25 17:01:11.008  1668-2689  WifiConfigManager       system_server                        V  Updating scan detail cache freq=5180 BSSID=70:3a:cb:89:b4:38 RSSI=-49 for "interstellar"WPA_PSK
+2026-01-25 17:01:11.009  1668-2689  WifiDataStall           system_server                        D   use default cca Level
+2026-01-25 17:01:11.009  1668-2689  WifiDataStall           system_server                        D   ccaLevel = 15
+2026-01-25 17:01:11.009  1668-2689  WifiDataStall           system_server                        D  L2 txTputKbps: 697582, rxTputKbps: 611914, L3 txTputKbps: 0, rxTputKbps: 0, TxTrafficHigh: false, RxTrafficHigh: false, Throughput Sufficient: true
+2026-01-25 17:01:11.012  1668-2689  WifiThroughputPredictor system_server                        D   utilization (LLS) -1 isBluetoothConnected: false final utilization: 15
+2026-01-25 17:01:11.013  1668-2689  WifiThroughputPredictor system_server                        D   BW: 2 RSSI: -50 Nss: 2 Mode: 5 symDur: 3600 snrDb 24 bitPerTone: 6667 rate: 866 throughput: 815
+2026-01-25 17:01:11.013  1668-2689  WifiThroughputPredictor system_server                        D   utilization (LLS) -1 isBluetoothConnected: false final utilization: 15
+2026-01-25 17:01:11.013  1668-2689  WifiThroughputPredictor system_server                        D   BW: 2 RSSI: -50 Nss: 2 Mode: 5 symDur: 3600 snrDb 24 bitPerTone: 6667 rate: 866 throughput: 815
+2026-01-25 17:01:11.017  1668-2689  WifiScoreCard           system_server                        D  BSSID update SIGNAL_POLL ID: 2069775146 SSID: "interstellar", BSSID: 70:3a:cb:89:b4:38, MAC: ae:6f:f3:49:42:8c, IP: /192.168.86.26, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -50, Link speed: 780Mbps, Tx Link speed: 780Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 650Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5180MHz, Net ID: 77, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"interstellar"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+2026-01-25 17:01:11.018  1668-2689  WifiScoreCard           system_server                        D  txRate: 1 txSpeed: 780
+2026-01-25 17:01:11.018  1668-2689  WifiScoreCard           system_server                        D  network update SIGNAL_POLL "interstellar" ID: 1457281875 RSSI -50 txSpeed -1
+2026-01-25 17:01:11.019  1668-2689  WifiClient...579:wlan0] system_server                        D   ClientModeImpl$L2ConnectedState screen=on 240 0 "interstellar" 70:3a:cb:89:b4:38 rssi=-50 f=5180 sc=60 link=780 tx=0.0, 0.0, 0.0 rx=0.0 bcn=10594031 [on:92 tx:0 rx:0 period:3265] from screen [on:244908 period:1062146] score=60
+2026-01-25 17:01:11.057  1668-2696  ConnectivityService     system_server                        D  NetReassign [no changes] [c 7] [a 3] [i 18]
+2026-01-25 17:01:11.402  1657-1691  JobInfo                 com.linkedin.android                 W  Requested important-while-foreground flag for job-2147483204 is ignored and takes no effect
+2026-01-25 17:01:11.427  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.428  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.430  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.430  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.434  1668-3347  ConnectivityService     system_server                        D  requestNetwork for uid/pid:10310/1657 activeRequest: null callbackRequest: 303656 [NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+2026-01-25 17:01:11.471  1657-1691  WM-WorkerWrapper        com.linkedin.android                 I  Worker result SUCCESS for Work [ id=c2230c13-0a3e-47d6-bf82-27b99f72f54a, tags={ com.linkedin.tracking.grpc.transport.restproxy.worker.RestProxyWorker, grest_dispatch_one_batch } ]
+2026-01-25 17:01:11.499  1284-13543 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.499  1284-13543 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.499  1284-13543 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.499  1284-13543 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.507 17144-17829 egdc                    com...oglequicksearchbox:interactor  I  (REDACTED) appOpsListener %s %s
+2026-01-25 17:01:11.513  3003-3003  Finsky:background       com.android.vending:background       I  [2] Memory trim requested to level 40
+2026-01-25 17:01:11.518 17144-17829 egdc                    com...oglequicksearchbox:interactor  I  (REDACTED) Ignoring irrelevant audio permission changes for package %s
+2026-01-25 17:01:11.520 19117-19854 cr_BindingManager       com.android.chrome                   I  onTrimMemory: level=40, size=0
+2026-01-25 17:01:11.523  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.523  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.523  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.523  1284-2586  libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.525 15185-15185 Finsky                  com.android.vending                  I  [2] Memory trim requested to level 40
+2026-01-25 17:01:11.525 15185-15185 Finsky                  com.android.vending                  I  [2] Flushing in-memory image cache
+2026-01-25 17:01:11.531  1668-2689  OemPaidWif...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.531  1668-2689  MultiInter...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.533  1668-2689  WifiNetworkFactory      system_server                        D  got request NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.533  1668-2689  WifiNetworkFactory      system_server                        V  Accepted network request NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.534  1668-2696  ConnectivityService     system_server                        D  NetReassign [303657 : null → 980] [c 0] [a 21] [i 47]
+2026-01-25 17:01:11.535  1668-2689  UntrustedW...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303657, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.559  1657-1740  JobInfo                 com.linkedin.android                 W  Requested important-while-foreground flag for job-2147483203 is ignored and takes no effect
+2026-01-25 17:01:11.580  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.580  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.580  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.580  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.589  1668-3351  ConnectivityService     system_server                        D  requestNetwork for uid/pid:10310/1657 activeRequest: null callbackRequest: 303658 [NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+2026-01-25 17:01:11.599  1668-2689  OemPaidWif...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.599  1668-2689  MultiInter...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.599  1668-2689  WifiNetworkFactory      system_server                        D  got request NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.599  1668-2689  WifiNetworkFactory      system_server                        V  Accepted network request NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.599  1668-2689  UntrustedW...orkFactory system_server                        D  got request NetworkRequest [ REQUEST id=303659, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10310 RequestorUid: 10310 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
+2026-01-25 17:01:11.599  1668-2696  ConnectivityService     system_server                        D  NetReassign [303659 : null → 980] [c 0] [a 2] [i 7]
+2026-01-25 17:01:11.601  1657-1739  WM-WorkerWrapper        com.linkedin.android                 I  Worker result SUCCESS for Work [ id=d5c67250-4942-4920-8ee7-c409c18b2d07, tags={ com.linkedin.tracking.grpc.transport.restproxy.worker.RestProxyWorker, grest_dispatch_one_batch } ]
+2026-01-25 17:01:11.609  1668-1668  JobScheduler            system_server                        W  Job didn't exist in JobStore: eed29ad #u0a310/-2147483203 com.linkedin.android/androidx.work.impl.background.systemjob.SystemJobService
+2026-01-25 17:01:11.613  3003-3003  Finsky:background       com.android.vending:background       I  [2] Memory trim requested to level 40
+2026-01-25 17:01:11.614  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.615  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.615  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.615  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.617  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.618  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.618  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.618  1284-13057 libbinder....hreadState cameraserver                         W  Sending oneway calls to frozen process.
+2026-01-25 17:01:11.625 15185-15185 Finsky                  com.android.vending                  I  [2] Memory trim requested to level 40
+2026-01-25 17:01:11.626 15185-15185 Finsky                  com.android.vending                  I  [2] Flushing in-memory image cache
+2026-01-25 17:01:11.628 19117-19854 cr_BindingManager       com.android.chrome                   I  onTrimMemory: level=40, size=0
+2026-01-25 17:01:12.434  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  soc_therm:32.522 raw data: soc_therm:32522
+2026-01-25 17:01:12.656 17144-17829 egdc                    com...oglequicksearchbox:interactor  I  (REDACTED) appOpsListener %s %s
+2026-01-25 17:01:12.658 17144-17829 egdc                    com...oglequicksearchbox:interactor  I  (REDACTED) Ignoring irrelevant audio permission changes for package %s
+2026-01-25 17:01:12.865  3926-3926  TracingMuxer            and...networks@service-darwinn-aidl  W  type=1400 audit(0.0:799146): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1328 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+2026-01-25 17:01:13.364  1359-1359  AOC                     aocd                                 D  H0:AMixSPKR meas core clock [5000 frames] min/max/avg: 572/574/574 MHz | core votes 192 144 576 144 | overall 576
+2026-01-25 17:01:13.370  1068-1948  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  GetSpeakerPower: get ctl [DSP1 Protection 5f227 SPL_PWR_SCALE] = 211599
+2026-01-25 17:01:13.372  1068-1948  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  GetSpeakerPower: get ctl [DSP1 Protection 5f227 SPL_SM_PWR_EST] = 0 convert to -inf
+2026-01-25 17:01:13.374  1068-1948  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  GetSpeakerPower: get ctl [R DSP1 Protection 5f227 SPL_PWR_SCALE] = 211599
+2026-01-25 17:01:13.375  1068-1948  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  D  GetSpeakerPower: get ctl [R DSP1 Protection 5f227 SPL_SM_PWR_EST] = 0 convert to -inf
+2026-01-25 17:01:13.396  1668-2578  ActivityManager         system_server                        D  freezing 5030 com.google.android.documentsui
+2026-01-25 17:01:13.408  1668-2578  ActivityManager         system_server                        D  freezing 5160 com.dropbox.android
+2026-01-25 17:01:13.415  1668-2578  ActivityManager         system_server                        D  freezing 5342 com.android.externalstorage
+2026-01-25 17:01:13.423  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+2026-01-25 17:01:13.426  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+2026-01-25 17:01:13.426  1668-2696  InetDiagMessage         system_server                        D  Destroyed live tcp sockets for uids={10094} in 6ms
+2026-01-25 17:01:13.429  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+2026-01-25 17:01:13.432  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+2026-01-25 17:01:13.432  1668-2696  InetDiagMessage         system_server                        D  Destroyed live tcp sockets for uids={10359} in 6ms
+2026-01-25 17:01:13.435  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+2026-01-25 17:01:13.438  1668-2696  InetDiagMessage         system_server                        D  Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+2026-01-25 17:01:13.439  1668-2696  InetDiagMessage         system_server                        D  Destroyed live tcp sockets for uids={10092} in 6ms
+2026-01-25 17:01:13.617 29046-29046 TaskbarManager          com...le.android.apps.nexuslauncher  D  dispatchTouchEvent:  displayId=0 isDefaultDisplay=true
+2026-01-25 17:01:13.621   550-683   DisplayModeController   surfaceflinger                       D  setDesiredMode 4619827172759878144 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=true, force=false}
+2026-01-25 17:01:13.625   551-648   hwc-pixel-display       and...are.composer.drm-hwc3-service  D  SetActiveConfigInternal: config: 3 powermode: 1
+2026-01-25 17:01:13.625   551-648   android.ha...c3-service and...are.composer.drm-hwc3-service  V  OnRefreshRateChange Setting Refresh Rate: 120, calculator type: kMrr
+2026-01-25 17:01:13.630  1074-1113  CHRE                    and...re.contexthub-service.generic  D  @ 48010.905: Parsed nanoapp message from host: app ID 0x476f6f676c00103b endpoint 0x8005 msgType 1 payload size 8
+2026-01-25 17:01:13.693  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.691320    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.694  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.694901    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.700  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.700209    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.704  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.704047    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.706 15543-15981 AidlBufferPool          app_process                          D  bufferpool2 0xb4000070d7021418 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.707  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.707802    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.708  1340-29421 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684da388 : 0(0 size) total buffers - 0(0 size) used buffers - 3/11 (recycle/alloc) - 8/11 (fetch/transfer)
+2026-01-25 17:01:13.708  1340-29421 AidlBufferPool          media.swcodec                        D  Destruction - bufferpool2 0xb4000073684da388 cached: 0/0M, 0/0% in use; allocs: 11, 27% recycled; transfers: 11, 27% unfetched
+2026-01-25 17:01:13.709  1340-29421 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684b30d8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/1 (recycle/alloc) - 1/1 (fetch/transfer)
+2026-01-25 17:01:13.709  1340-29421 AidlBufferPool          media.swcodec                        D  Destruction - bufferpool2 0xb4000073684b30d8 cached: 0/0M, 0/0% in use; allocs: 1, 0% recycled; transfers: 1, 0% unfetched
+2026-01-25 17:01:13.709  1340-2870  AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684d26a8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/1 (recycle/alloc) - 1/1 (fetch/transfer)
+2026-01-25 17:01:13.709  1340-2870  AidlBufferPool          media.swcodec                        D  Destruction - bufferpool2 0xb4000073684d26a8 cached: 0/0M, 0/0% in use; allocs: 1, 0% recycled; transfers: 1, 0% unfetched
+2026-01-25 17:01:13.711  1340-16177 mediaswcodec            media.swcodec                        W  AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+2026-01-25 17:01:13.711  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.711389    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.715  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.715917    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.721  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.721031    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.724  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.724025    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.730  2822-2822  deeptouch               and...dware.input.processor-service  W  W0000 00:00:1769353273.730027    2822 event_matcher.cc:47] Event queue exceeds maximum size; dropping oldest
+2026-01-25 17:01:13.733  2822-2824  deeptouch               and...dware.input.processor-service  I  I0000 00:00:1769353273.733597    2824 tf_lite_classifier.cc:413] Event stream classified as kNone
+2026-01-25 17:01:13.734 16183-16183 AudioEngine             com.example.kaosseffect              I  Play requested. isPlaying = true
+2026-01-25 17:01:13.735  1668-6317  AppOps                  system_server                        W  Noting op not finished: uid 10494 pkg com.example.kaosseffect code 154 startTime of in progress event=1769353258357
+2026-01-25 17:01:13.736  1668-6317  MediaFocusControl       system_server                        I  requestAudioFocus() from uid/pid 10494/16183 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@eaa393ecom.example.kaosseffect.MainActivity$$ExternalSyntheticLambda2@fdf739f callingPack=com.example.kaosseffect req=1 flags=0x1 sdk=34
+2026-01-25 17:01:13.736  1668-6317  AS.FadeOutManager       system_server                        I  unfadeOutUid() uid:10494
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684d01a8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684bfa08 : 0(0 size) total buffers - 0(0 size) used buffers - 11/15 (recycle/alloc) - 4/14 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c7498 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684cbe98 : 3(12288 size) total buffers - 3(12288 size) used buffers - 157/166 (recycle/alloc) - 9/166 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684daa78 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c6da8 : 1(4096 size) total buffers - 1(4096 size) used buffers - 64/71 (recycle/alloc) - 8/71 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684dc198 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684cca28 : 0(0 size) total buffers - 0(0 size) used buffers - 0/3 (recycle/alloc) - 2/2 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c3ac8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c25f8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.738  1340-32293 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684d9a48 : 1(4096 size) total buffers - 1(4096 size) used buffers - 8/12 (recycle/alloc) - 4/12 (fetch/transfer)
+2026-01-25 17:01:13.739 16183-16255 AidlBufferPool          com.example.kaosseffect              D  bufferpool2 0xb4000072a1352d28 : 4(262144 size) total buffers - 4(262144 size) used buffers - 0/5 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:13.740 16183-16255 ple.kaosseffect         com.example.kaosseffect              W  AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+2026-01-25 17:01:13.749 16183-16217 libc                    com.example.kaosseffect              A  Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 16217 (AAudio_1), pid 16183 (ple.kaosseffect)
+2026-01-25 17:01:13.759  1074-1113  CHRE                    and...re.contexthub-service.generic  D  @ 48011.022: Parsed nanoapp message from host: app ID 0x476f6f676c00103b endpoint 0x8005 msgType 1 payload size 6
+2026-01-25 17:01:13.760  1074-1113  CHRE                    and...re.contexthub-service.generic  I  @ 48011.022: Failed to cancel timer ID 153824: not found
+2026-01-25 17:01:13.760  1074-1113  CHRE                    and...re.contexthub-service.generic  I  @ 48011.022: Failed to cancel timer ID 153824: not found
+2026-01-25 17:01:13.820 16273-16273 DEBUG                   crash_dump64                         E  failed to readlink /proc/16217/fd/155: No such file or directory
+2026-01-25 17:01:13.830 14601-14910 NearbyMediums           com.google.android.gms.persistent    I  No BLE Fast/GATT advertisements found in the latest cycle.
+2026-01-25 17:01:13.831 14601-14910 NearbyMediums           com.google.android.gms.persistent    I  Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing}
+2026-01-25 17:01:13.885 16273-16273 crash_dump64            crash_dump64                         I  obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+2026-01-25 17:01:13.886   759-759   tombstoned              tombstoned                           I  received crash request for pid 16217
+2026-01-25 17:01:13.886 16273-16273 crash_dump64            crash_dump64                         I  performing dump of process 16183 (target tid = 16217)
+2026-01-25 17:01:13.992  1143-16215 AAudioServiceStreamBase audioserver                          W  writeUpMessageQueue(): Queue full. Did client stop? Suspending stream. what = 3, Shared
+2026-01-25 17:01:14.022  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  Creating message to get link statistics; iface = 47
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Build fingerprint: 'google/frankel/frankel:16/BD3A.251105.010.E1/14337626:user/release-keys'
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Kernel Release: '6.6.82-android15-8-gd4aed7ed470e-ab13759939-4k'
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Revision: 'MP1.0'
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  ABI: 'arm64'
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Timestamp: 2026-01-25 17:01:13.898495552+0200
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Process uptime: 17s
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Executable: /system/bin/app_process64
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Cmdline: com.example.kaosseffect
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  pid: 16183, tid: 16217, name: AAudio_1  >>> com.example.kaosseffect <<<
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  uid: 10494
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  esr: 0000000092000006 (Data Abort Exception 0x24)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000 (read)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  Cause: null pointer dereference
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x0  0000000000000000  x1  0000000000000005  x2  fffffffffffffff8  x3  b4000071b1331dd0
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x4  b40000715138c348  x5  b4000071b1331e58  x6  0000000000000000  x7  b4000071313510b3
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x8  000000710a97e8a8  x9  0000000000000059  x10 00000000000000b2  x11 fffffffffffffff0
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x12 000000000028b2f1  x13 000000007fffffff  x14 0000000000000000  x15 000097ad3e9abd5b
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x16 00000073a299bfb8  x17 00000073a2911140  x18 00000070627ec000  x19 0000000000000059
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x20 b4000072a1327260  x21 b4000071b1331b90  x22 000000710a95ba64  x23 b4000071e1395bd0
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x24 b4000071e1395ce4  x25 00000070e0db5aa8  x26 00000070e0db5aa8  x27 00000070e0d5f3a0
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      x28 00000070e0d5f64d  x29 00000070638922d0
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      lr  000000710a9517bc  sp  0000007063892220  pc  000000710a9517c4  pst 0000000060001000
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A      esr 0000000092000006
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  10 total frames
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A  backtrace:
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #00 pc 000000000002f7c4  /data/app/~~anwzz_bv2uhRDscWS3pEIA==/com.example.kaosseffect-rcI17XUwU9G6FVUYXmeOEg==/base.apk!libnative-lib.so (offset 0xe6c000) (AudioEngine::onAudioReady(oboe::AudioStream*, void*, int)+660) (BuildId: 483edfbf14d4ce76cd5ee5278d4fce655f772868)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #01 pc 000000000003b808  /data/app/~~anwzz_bv2uhRDscWS3pEIA==/com.example.kaosseffect-rcI17XUwU9G6FVUYXmeOEg==/base.apk!libnative-lib.so (offset 0xe6c000) (oboe::AudioStream::fireDataCallback(void*, int)+132) (BuildId: 483edfbf14d4ce76cd5ee5278d4fce655f772868)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #02 pc 0000000000039f0c  /data/app/~~anwzz_bv2uhRDscWS3pEIA==/com.example.kaosseffect-rcI17XUwU9G6FVUYXmeOEg==/base.apk!libnative-lib.so (offset 0xe6c000) (oboe::AudioStreamAAudio::callOnAudioReady(AAudioStreamStruct*, void*, int)+40) (BuildId: 483edfbf14d4ce76cd5ee5278d4fce655f772868)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #03 pc 000000000004f2b0  /system/lib64/libaaudio_internal.so (aaudio::AudioStream::dataCallbackInternal(void*, int)+128) (BuildId: a1b75a0f277c1f9b1518945b6c28199a)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #04 pc 0000000000052de8  /system/lib64/libaaudio_internal.so (aaudio::AudioStream::maybeCallDataCallback(void*, int)+136) (BuildId: a1b75a0f277c1f9b1518945b6c28199a)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #05 pc 0000000000047e90  /system/lib64/libaaudio_internal.so (aaudio::AudioStreamInternalPlay::callbackLoop()+928) (BuildId: a1b75a0f277c1f9b1518945b6c28199a)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #06 pc 00000000000524b8  /system/lib64/libaaudio_internal.so (aaudio::AudioStream::wrapUserThread()+184) (BuildId: a1b75a0f277c1f9b1518945b6c28199a)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #07 pc 0000000000052bac  /system/lib64/libaaudio_internal.so (aaudio::AudioStream_internalThreadProc(void*) (.cfi)+252) (BuildId: a1b75a0f277c1f9b1518945b6c28199a)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #08 pc 00000000000875d4  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+180) (BuildId: 4a26e04ea2224937eb165e0d5fee74ad)
+2026-01-25 17:01:14.030 16273-16273 DEBUG                   crash_dump64                         A        #09 pc 0000000000079e54  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 4a26e04ea2224937eb165e0d5fee74ad)
+2026-01-25 17:01:14.039   759-759   tombstoned              tombstoned                           E  Tombstone written to: tombstone_17
+2026-01-25 17:01:14.043  1668-16278 DropBoxManagerService   system_server                        I  add tag=data_app_native_crash isTagEnabled=true flags=0x2
+2026-01-25 17:01:14.044  1668-2573  DropBoxManagerService   system_server                        I  add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+2026-01-25 17:01:14.049  1668-16277 ActivityTaskManager     system_server                        W    Force finishing activity com.example.kaosseffect/.MainActivity
+2026-01-25 17:01:14.050  1668-16277 TransitionChain         system_server                        W  Combining AR.finish-force-crash into #44671(CLOSE|R|0x10) from finishTopCrash
+2026-01-25 17:01:14.052  1668-16277 WindowManager           system_server                        V  Defer transition id=44671 for TaskFragmentTransaction=android.os.Binder@3d8d81d
+2026-01-25 17:01:14.052  1668-16277 WindowManager           system_server                        V  deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.TransitionController.deferTransitionReady:1014 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.dispatchTransaction:508 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1250 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1219 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:808
+2026-01-25 17:01:14.053  1668-1789  ActivityManager         system_server                        I  Showing crash dialog for package com.example.kaosseffect u0
+2026-01-25 17:01:14.053  1668-6317  WindowManager           system_server                        V  Continue transition id=44671 for TaskFragmentTransaction=android.os.Binder@3d8d81d
+2026-01-25 17:01:14.053  1668-6317  WindowManager           system_server                        V  continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.TransitionController.continueTransitionReady:1023 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.onTransactionFinished:537 com.android.server.wm.TaskFragmentOrganizerController.onTransactionHandled:731 android.window.ITaskFragmentOrganizerController$Stub.onTransact:225 android.os.Binder.execTransactInternal:1441
+2026-01-25 17:01:14.055  3016-3016  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=data_app_native_crash time=1769353274044
+2026-01-25 17:01:14.056  3016-3016  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.057  3016-3121  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=data_app_native_crash time=1769353274044 packageName=com.example.kaosseffect
+2026-01-25 17:01:14.057  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776860 block
+2026-01-25 17:01:14.057  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.057  3016-3121  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388393
+2026-01-25 17:01:14.057  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776860 block
+2026-01-25 17:01:14.057  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776861 block
+2026-01-25 17:01:14.057  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776861 block
+2026-01-25 17:01:14.058  2829-2869  WindowManagerShell      com.android.systemui                 V  Transition requested (#44671): android.os.BinderProxy@80d2773 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=15475 effectiveUid=10494 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.example.kaosseffect/.MainActivity } baseActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} topActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} origActivity=null realActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} numActivities=1 lastActiveTime=4342963963 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@148a47} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5910630 com.example.kaosseffect.MainActivity} launchCookies=[android.os.BinderProxy@665839d] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(266, 695 - 814, 1775) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 173 - 1080, 2298) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactiveundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 44671 }
+2026-01-25 17:01:14.062  3016-3016  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS time=1769353274061
+2026-01-25 17:01:14.062  3016-3016  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.063  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776862 block
+2026-01-25 17:01:14.063  3016-3135  DropBoxStateSource      com...le.android.pixelsystemservice  E  DropBox entry does not have process name.
+2026-01-25 17:01:14.063  3016-3135  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS time=1769353274061 packageName=null
+2026-01-25 17:01:14.063  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.063  3016-3135  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388394
+2026-01-25 17:01:14.063  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776862 block
+2026-01-25 17:01:14.063  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776863 block
+2026-01-25 17:01:14.063  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776863 block
+2026-01-25 17:01:14.066  1668-2573  BootReceiver            system_server                        I  Copying /data/tombstones/tombstone_17 to DropBox (SYSTEM_TOMBSTONE)
+2026-01-25 17:01:14.066  1668-2573  DropBoxManagerService   system_server                        I  add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+2026-01-25 17:01:14.075  3016-3016  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=SYSTEM_TOMBSTONE time=1769353274074
+2026-01-25 17:01:14.075  3016-3016  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.075  3016-4300  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776864 block
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 0 per_rate_size 32, data_rem_len 1152
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 1 per_rate_size 32, data_rem_len 1120
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 2 per_rate_size 32, data_rem_len 1088
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 3 per_rate_size 32, data_rem_len 1056
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 4 per_rate_size 32, data_rem_len 1024
+2026-01-25 17:01:14.076  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 5 per_rate_size 32, data_rem_len 992
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 6 per_rate_size 32, data_rem_len 960
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 7 per_rate_size 32, data_rem_len 928
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 8 per_rate_size 32, data_rem_len 896
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 9 per_rate_size 32, data_rem_len 864
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 10 per_rate_size 32, data_rem_len 832
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 11 per_rate_size 32, data_rem_len 800
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 12 per_rate_size 32, data_rem_len 768
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 13 per_rate_size 32, data_rem_len 736
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 14 per_rate_size 32, data_rem_len 704
+2026-01-25 17:01:14.077  3016-3135  DropBoxStateSource      com...le.android.pixelsystemservice  E  DropBox entry does not have process name.
+2026-01-25 17:01:14.077  3016-3135  DropBoxStateSource      com...le.android.pixelsystemservice  D  onReceive: tag=SYSTEM_TOMBSTONE time=1769353274074 packageName=null
+2026-01-25 17:01:14.077  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.077  3016-3135  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388395
+2026-01-25 17:01:14.077  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776864 block
+2026-01-25 17:01:14.077  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 15 per_rate_size 32, data_rem_len 672
+2026-01-25 17:01:14.077  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776865 block
+2026-01-25 17:01:14.077  3016-3135  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776865 block
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 16 per_rate_size 32, data_rem_len 640
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 17 per_rate_size 32, data_rem_len 608
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 18 per_rate_size 32, data_rem_len 576
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 19 per_rate_size 32, data_rem_len 544
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 20 per_rate_size 32, data_rem_len 512
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 21 per_rate_size 32, data_rem_len 480
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 22 per_rate_size 32, data_rem_len 448
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 23 per_rate_size 32, data_rem_len 416
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 24 per_rate_size 32, data_rem_len 384
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 25 per_rate_size 32, data_rem_len 352
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 26 per_rate_size 32, data_rem_len 320
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 27 per_rate_size 32, data_rem_len 288
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 28 per_rate_size 32, data_rem_len 256
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 29 per_rate_size 32, data_rem_len 224
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 30 per_rate_size 32, data_rem_len 192
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 31 per_rate_size 32, data_rem_len 160
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 32 per_rate_size 32, data_rem_len 128
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 33 per_rate_size 32, data_rem_len 96
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 34 per_rate_size 32, data_rem_len 64
+2026-01-25 17:01:14.078  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  index: 35 per_rate_size 32, data_rem_len 32
+2026-01-25 17:01:14.079  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  Getting cached scan results, iface handle = 0xb400007baf379010
+2026-01-25 17:01:14.079  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  E  Creating message to get cached scan results
+2026-01-25 17:01:14.085  1139-1139  WifiHAL                 ven...oogle.wifi_ext-service-vendor  I  In GetCachedScanResultsCommand::handleResponse
+2026-01-25 17:01:14.086  1143-18231 AAudioClientTracker     audioserver                          W  binderDied() close abandoned stream 0x00000402
+2026-01-25 17:01:14.086  1143-16212 AAudioServiceStreamBase audioserver                          D  run() got COMMAND opcode 4 after 257 loops
+2026-01-25 17:01:14.086  1668-3351  WindowManager           system_server                        I  WIN DEATH: Window{b838fd9 u0 com.example.kaosseffect/com.example.kaosseffect.MainActivity}
+2026-01-25 17:01:14.087   750-750   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 16220, err=3
+2026-01-25 17:01:14.087   750-750   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 16221, err=3
+2026-01-25 17:01:14.087   750-750   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 16199, err=3
+2026-01-25 17:01:14.087  1668-4780  MediaFocusControl       system_server                        I  AudioFocus  removeFocusStackEntryOnDeath(): removing entry for android.os.BinderProxy@5c924a1
+2026-01-25 17:01:14.087  1668-3300  ImeTracker              system_server                        I  com.example.kaosseffect:882adaf6: onRequestHide at ORIGIN_SERVER reason HIDE_REMOVE_CLIENT fromUser false
+2026-01-25 17:01:14.087  1668-3300  ImeTracker              system_server                        I  com.example.kaosseffect:882adaf6: onCancelled at PHASE_SERVER_SHOULD_HIDE
+2026-01-25 17:01:14.087  1049-1049  Zygote                  zygote64                             I  Process 16183 exited due to signal 11 (Segmentation fault)
+2026-01-25 17:01:14.088  1340-2870  AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684cecd8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:14.088  1340-2870  AidlBufferPool          media.swcodec                        D  Destruction - bufferpool2 0xb4000073684cecd8 cached: 0/0M, 0/0% in use; allocs: 0, 0% recycled; transfers: 0, 0% unfetched
+2026-01-25 17:01:14.088  1340-2870  mediaswcodec            media.swcodec                        E  unlinkToDeath: removed reference to death recipient but unlink failed: DEAD_OBJECT
+2026-01-25 17:01:14.088  1668-6317  ActivityManager         system_server                        I  Process com.example.kaosseffect (pid 16183) has died: fg  TOP
+2026-01-25 17:01:14.089  1294-14336 MediaBufferGroup        media.extractor                      E  buffer(0xb4000074804a34e0) has residual remoteRefcount 1
+2026-01-25 17:01:14.090  1068-17947 ASvc::AudioExtension    and...rdware.audio.service-aidl.aoc  I  getDcHandler
+2026-01-25 17:01:14.090  1340-2870  AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684db3b8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/0 (recycle/alloc) - 0/0 (fetch/transfer)
+2026-01-25 17:01:14.090  1340-2870  AidlBufferPool          media.swcodec                        D  Destruction - bufferpool2 0xb4000073684db3b8 cached: 0/0M, 0/0% in use; allocs: 0, 0% recycled; transfers: 0, 0% unfetched
+2026-01-25 17:01:14.090  1340-2870  libbinder....hreadState media.swcodec                        E  attemptIncStrongHandle(27): Not supported
+2026-01-25 17:01:14.090 26225-26225 bluetooth               com.google.android.bluetooth         I  system/btif/avrcp/avrcp_service.cc:532 SendMediaUpdate: track_changed=false :  play_state=true :  queue=false
+2026-01-25 17:01:14.091 26225-26225 MediaControlProfile     com.google.android.bluetooth         E  onCurrentPlayerStateUpdated: base actions not supported, player actions= 0, expected at least= 7f
+2026-01-25 17:01:14.091 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature PLAYBACK_SPEED support: true
+2026-01-25 17:01:14.091 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature PLAYBACK_SPEED support: true
+2026-01-25 17:01:14.091 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature PLAYBACK_SPEED support: true
+2026-01-25 17:01:14.091 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature PLAYBACK_SPEED_NOTIFY support: true
+2026-01-25 17:01:14.092 10518-10518 adbd                    adbd                                 I  Remote process closed the socket (on MSG_PEEK)
+2026-01-25 17:01:14.092  1068-6189  ASvc::DcHandler         and...rdware.audio.service-aidl.aoc  I  setIsAnyPlaybackActive: false
+2026-01-25 17:01:14.092 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.092  1668-16277 TransitionChain         system_server                        W  Combining appCrash into #44671(CLOSE|R|0x10) from finishTopCrash
+2026-01-25 17:01:14.092  1668-16277 ActivityTaskManager     system_server                        W    Force finishing activity com.example.kaosseffect/.MainActivity
+2026-01-25 17:01:14.092 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.092 26225-26225 BluetoothMcpService     com.google.android.bluetooth         E  MCS access not permitted
+2026-01-25 17:01:14.092 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature TRACK_POSITION support: true
+2026-01-25 17:01:14.092 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature TRACK_POSITION_NOTIFY support: true
+2026-01-25 17:01:14.092 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_STATE support: true
+2026-01-25 17:01:14.092 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_STATE support: true
+2026-01-25 17:01:14.093 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.093  1143-16211 AAudioServiceStreamBase audioserver                          D  run() got COMMAND opcode 11 after 3224 loops
+2026-01-25 17:01:14.093 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.093 26225-26225 BluetoothMcpService     com.google.android.bluetooth         E  MCS access not permitted
+2026-01-25 17:01:14.093 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED support: true
+2026-01-25 17:01:14.093 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_STATE support: true
+2026-01-25 17:01:14.093 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_STATE support: true
+2026-01-25 17:01:14.093 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.094  1668-3184  AppOps                  system_server                        E  attributionTag  not declared in manifest of com.example.kaosseffect
+2026-01-25 17:01:14.095 26225-26225 BluetoothA...Properties com.google.android.bluetooth         I  getBondedDevices: length=6
+2026-01-25 17:01:14.095 26225-26225 BluetoothMcpService     com.google.android.bluetooth         E  MCS access not permitted
+2026-01-25 17:01:14.095 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature MEDIA_STATE support: true
+2026-01-25 17:01:14.095 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature SEEKING_SPEED support: true
+2026-01-25 17:01:14.095 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature SEEKING_SPEED support: true
+2026-01-25 17:01:14.095 26225-26225 MediaControlGattService com.google.android.bluetooth         W  Feature SEEKING_SPEED support: true
+2026-01-25 17:01:14.096  1668-1791  ActivityManager         system_server                        W  setHasOverlayUi called on unknown pid: 16183
+2026-01-25 17:01:14.096  1668-16277 ActivityManager         system_server                        W  Ignoring remove of inactive process: ProcessRecord{40c0e90 0:com.example.kaosseffect/u0a494}
+2026-01-25 17:01:14.097  1300-28916 ResourceManagerMetrics  mediaserver                          I  onProcessTerminated: Application/Process(16183:10494) terminated with reason: 0. TotalClientsCreated: 117977  TotalClientsKilled: 2123
+2026-01-25 17:01:14.097  1300-28916 ResourceManagerMetrics  mediaserver                          I  pushCodecUsageMetrics: No Video Codec Entry for Application[pid(16183): uid(10494)]
+2026-01-25 17:01:14.097  1300-27845 mediaserver             mediaserver                          E  unlinkToDeath: removed reference to death recipient but unlink failed: DEAD_OBJECT
+2026-01-25 17:01:14.097  1300-28916 ResourceManagerMetrics  mediaserver                          I  pushCodecUsageMetrics: Concurrent Codec Usage Report for the Process[pid(16183): uid(10494) is Killed] is Peak { AudioDec[ SW: 1 ] } Peak Pixels: 0. Peak Codec Memory: 0 Total Codecs: 117977 Killed Codec: 2123
+2026-01-25 17:01:14.097  1300-27845 libbinder....hreadState mediaserver                          E  attemptIncStrongHandle(52): Not supported
+2026-01-25 17:01:14.097 29046-29046 ViewRootImpl            com...le.android.apps.nexuslauncher  D  Skipping stats log for color mode
+2026-01-25 17:01:14.098 29046-29046 BaseActivity            com...le.android.apps.nexuslauncher  D  Launcher flags updated: [state_started] +[state_started]
+2026-01-25 17:01:14.098 29046-29046 BaseActivity            com...le.android.apps.nexuslauncher  D  Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+2026-01-25 17:01:14.098 29046-29046 BaseActivity            com...le.android.apps.nexuslauncher  D  Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+2026-01-25 17:01:14.098 29046-29046 StatsLog                com...le.android.apps.nexuslauncher  D  LAUNCHER_ONRESUME
+2026-01-25 17:01:14.099 29046-29046 NexusLaunc...elDelegate com...le.android.apps.nexuslauncher  D  notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+2026-01-25 17:01:14.103 29046-29072 QuickstepModelDelegate  com...le.android.apps.nexuslauncher  D  notifyAppTargetEvent action=1 launchLocation=
+2026-01-25 17:01:14.105  1668-2689  WifiClient...579:wlan0] system_server                        D  updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=780 freq=5180 RxLinkSpeed=650
+2026-01-25 17:01:14.105  1668-2689  WifiDataStall           system_server                        D  tx tput in kbps: 697582
+2026-01-25 17:01:14.105  1668-2689  WifiDataStall           system_server                        D  rx tput in kbps: 611914
+2026-01-25 17:01:14.105  1668-2689  WifiConfigManager       system_server                        V  Updating scan detail cache freq=5180 BSSID=70:3a:cb:89:b4:38 RSSI=-49 for "interstellar"WPA_PSK
+2026-01-25 17:01:14.105  1668-2689  WifiDataStall           system_server                        D   use default cca Level
+2026-01-25 17:01:14.105  1668-2689  WifiDataStall           system_server                        D   ccaLevel = 15
+2026-01-25 17:01:14.105  1668-2689  WifiDataStall           system_server                        D  L2 txTputKbps: 697582, rxTputKbps: 611914, L3 txTputKbps: 0, rxTputKbps: 0, TxTrafficHigh: false, RxTrafficHigh: false, Throughput Sufficient: true
+2026-01-25 17:01:14.106 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  No text view can be set up
+2026-01-25 17:01:14.106 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  setFormattedContentDescription: text=-14°C, iconDescription=Cloudy, contentDescription=Cloudy, -14°C
+2026-01-25 17:01:14.106 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2026-01-25 17:01:14.106 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2026-01-25 17:01:14.106 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  Secondary card pane is null
+2026-01-25 17:01:14.109 29046-29046 BaseDepthController     com...le.android.apps.nexuslauncher  D  setSurface:
+                                                                                                    	mWaitingOnSurfaceValidity: false
+                                                                                                    	mBaseSurface: Surface(name=com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity)/@0xacc3476
+2026-01-25 17:01:14.109 29046-29046 BaseDepthController     com...le.android.apps.nexuslauncher  V  Applying blur: 79 to Surface(name=com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity)/@0xacc3476
+2026-01-25 17:01:14.110  1668-1815  libprocessgroup         system_server                        I  Removed cgroup /sys/fs/cgroup/apps/uid_10494/pid_16183
+2026-01-25 17:01:14.110  1668-2748  Background...rolService system_server                        D  Package event received: 0
+2026-01-25 17:01:14.110  2829-3014  WallpaperService        com.android.systemui                 D  onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@a9618e1
+2026-01-25 17:01:14.110  1294-2880  libbinder....hreadState media.extractor                      E  Binder transaction failure. id: 1494753684, BR_*: 29189, error: -22 (Invalid argument)
+2026-01-25 17:01:14.111  1668-2689  WifiThroughputPredictor system_server                        D   utilization (LLS) -1 isBluetoothConnected: false final utilization: 15
+2026-01-25 17:01:14.111  1668-2689  WifiThroughputPredictor system_server                        D   BW: 2 RSSI: -50 Nss: 2 Mode: 5 symDur: 3600 snrDb 24 bitPerTone: 6667 rate: 866 throughput: 815
+2026-01-25 17:01:14.111  1668-2689  WifiThroughputPredictor system_server                        D   utilization (LLS) -1 isBluetoothConnected: false final utilization: 15
+2026-01-25 17:01:14.111  1668-2748  Background...rolService system_server                        D  Package event received: 0
+2026-01-25 17:01:14.111  1668-2689  WifiThroughputPredictor system_server                        D   BW: 2 RSSI: -50 Nss: 2 Mode: 5 symDur: 3600 snrDb 24 bitPerTone: 6667 rate: 866 throughput: 815
+2026-01-25 17:01:14.111  1668-2748  Background...rolService system_server                        D  Package event received: 0
+2026-01-25 17:01:14.113  1668-2689  WifiScoreCard           system_server                        D  BSSID update SIGNAL_POLL ID: 2069775146 SSID: "interstellar", BSSID: 70:3a:cb:89:b4:38, MAC: ae:6f:f3:49:42:8c, IP: /192.168.86.26, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -50, Link speed: 780Mbps, Tx Link speed: 780Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 650Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5180MHz, Net ID: 77, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"interstellar"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+2026-01-25 17:01:14.113  1668-2689  WifiScoreCard           system_server                        D  txRate: 1 txSpeed: 780
+2026-01-25 17:01:14.113  1668-2689  WifiScoreCard           system_server                        D  network update SIGNAL_POLL "interstellar" ID: 1457281875 RSSI -50 txSpeed -1
+2026-01-25 17:01:14.114  1668-2689  WifiClient...579:wlan0] system_server                        D   ClientModeImpl$L2ConnectedState screen=on 240 0 "interstellar" 70:3a:cb:89:b4:38 rssi=-50 f=5180 sc=60 link=780 tx=0.0, 0.0, 0.0 rx=0.0 bcn=10594062 [on:90 tx:0 rx:0 period:3093] from screen [on:244998 period:1065241] score=60
+2026-01-25 17:01:14.114  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: uid=10494 importance=1000
+2026-01-25 17:01:14.114  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: packages=[com.example.kaosseffect] importance=1000
+2026-01-25 17:01:14.114  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: packageName=com.example.kaosseffect importance=1000
+2026-01-25 17:01:14.114  3016-7173  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.115  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: uid=10235 importance=100
+2026-01-25 17:01:14.115  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: packages=[com.google.android.apps.nexuslauncher] importance=100
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776866 block
+2026-01-25 17:01:14.115  3016-7173  UidImportanceSource     com...le.android.pixelsystemservice  D  onUidImportanceBlock: packageName=com.google.android.apps.nexuslauncher importance=100
+2026-01-25 17:01:14.115  3016-7173  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.115  3016-3121  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388396
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776866 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776867 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Enqueuing the block
+2026-01-25 17:01:14.115  3016-3121  ImpulseStateSource      com...le.android.pixelsystemservice  D  Notify clients: 388397
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776867 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776868 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776868 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Start running the #776869 block
+2026-01-25 17:01:14.115  3016-3121  BusinessScope           com...le.android.pixelsystemservice  D  Finish running the #776869 block
+2026-01-25 17:01:14.116  1668-4786  AppOps                  system_server                        E  attributionTag  not declared in manifest of com.example.kaosseffect
+2026-01-25 17:01:14.116  1668-4786  AppOps                  system_server                        E  Operation not started: uid=10494 pkg=com.example.kaosseffect(null) op=CONTROL_AUDIO
+2026-01-25 17:01:14.116  1143-16211 StreamHalAidl           audioserver                          D  [out|ioHandle:11117] stop
+2026-01-25 17:01:14.116  1143-16211 StreamHalAidl           audioserver                          D  [out|ioHandle:11117] drain
+2026-01-25 17:01:14.117  1068-16209 AHal::Stream            and...rdware.audio.service-aidl.aoc  I  Stop: stop stream mmap-playback
+2026-01-25 17:01:14.118 29046-29046 NotificationListener    com...le.android.apps.nexuslauncher  I  Handling notification state refresh for com.google.android.gm#0
+2026-01-25 17:01:14.118 29046-29046 NotificationListener    com...le.android.apps.nexuslauncher  I  Handling notification state refresh for com.whoop.android#0
+2026-01-25 17:01:14.118 29046-29046 NotificationListener    com...le.android.apps.nexuslauncher  I  Handling notification state refresh for com.jetbrains.youtrack.mobile.app#0
+2026-01-25 17:01:14.118 29046-29046 NotificationListener    com...le.android.apps.nexuslauncher  I  Handling notification state refresh for com.jetbrains.youtrack.mobile.app#0
+2026-01-25 17:01:14.118 29046-29046 NotificationListener    com...le.android.apps.nexuslauncher  I  Handling notification state refresh for com.google.android.permissioncontroller#0
+2026-01-25 17:01:14.119  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  Deactivate: deactivate 404917
+2026-01-25 17:01:14.119  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  InvalidateLocked: new graph #77231 Edges(0):
+2026-01-25 17:01:14.119  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  InvalidateLocked: ============ apply graph #77231 [Sun Jan 25 17:01:14 2026] start ============
+2026-01-25 17:01:14.119  1068-16209 AHal::Waves             and...rdware.audio.service-aidl.aoc  I  UpdateActiveDevices: removing speaker
+2026-01-25 17:01:14.119  1068-16209 AHal::DeviceInterface   and...rdware.audio.service-aidl.aoc  I  Disconnect: disconnect mmap-playback-0 -> speaker
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x00c9, tag: 0xc8 [cntr = 149529]
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:MSG: controller.cc, 933: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0xc8, rc: 0
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  H0:Mixer AMixSPKR Input 0 RB overflow. Resyncing.
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x2f, rc: 0
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: CPM_IPC_HOST: ipc: C-F1-AC, cmd ID: 0x00cb, tag: 0x8e, rc: 0
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x30, rc: 0
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x31, rc: 0
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:MSG: controller.cc, 275: AudioOutCtrl: cmd ID: 0x010f, tag: 0xc9 [cntr = 149530]
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:Unregistered Source 0 [UltraLL] from Sink 0 [Speaker]
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:AT Map:0 (LL:0), 0 EPs active, Power: Yes, Config: No
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:Mixer 0 configuration changed: (0)
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:Sink 0 Configuration changed: ULL (disabled)
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:MSG: lpcm.cc, 106: Int PLL deinitialized
+2026-01-25 17:01:14.121  1668-1811  ActivityManager         system_server                        D  sync unfroze 758 com.google.android.apps.pixel.dcservice for 3
+2026-01-25 17:01:14.121  1359-1359  AOC                     aocd                                 D  F1:MSG: lpcm.cc, 143: Usage PLL audio = 0x0
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  F1:[Idle Tracker] long no idle:[0] average between idle:[0.100749ms] max no idle:[34.007376ms]
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  F1:MSG: controller.cc, 933: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0xc9, rc: 0
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  H0:Mixer AMixSPKR: 480 samples (0000/0000) (OFF SC LC) multi out OFF
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  H0:Mixer configuration updated
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  H0:[Idle Tracker] long no idle:[0] average between idle:[2.288525ms] max no idle:[77.877980ms]
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  H0:AMixSPKR meas core clock [757 frames] min/max/avg: 381/574/573 MHz | core votes 192 144 576 144 | overall 576
+2026-01-25 17:01:14.126  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: CPM_IPC_HOST: ipc: C-F1-AC, cmd ID: 0x00cb, tag: 0x8f, rc: 0
+2026-01-25 17:01:14.128  2829-18606 WindowManagerShell      com.android.systemui                 V  onTransitionReady(transaction=7164008854491)
+2026-01-25 17:01:14.128  2829-2869  WindowManagerShell      com.android.systemui                 V  onTransitionReady (#44671) android.os.BinderProxy@80d2773: {id=44671 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+                                                                                                            {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x7c272a9 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},
+                                                                                                            {m=CLOSE f=NONE leash=Surface(name=Task=15475)/@0x470802e sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},
+                                                                                                            {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fc6d111})/@0xc88c7cf sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0}
+                                                                                                        ]}
+2026-01-25 17:01:14.129  2829-2869  WindowManagerShell      com.android.systemui                 V  Playing animation for (#44671) android.os.BinderProxy@80d2773@0
+2026-01-25 17:01:14.129  2829-2869  ShellRecents            com.android.systemui                 V  RecentsTransitionHandler.startAnimation: no controller found
+2026-01-25 17:01:14.130   758-758   ForwardBroadcastListene com....android.apps.pixel.dcservice  I  Receive forward intent: com.google.android.apps.pixel.dcservice.monitor.ACTION_MONITOR_MEDIA_PLAYBACK_STOPPED
+2026-01-25 17:01:14.130   758-758   PowerSavingModeHandler  com....android.apps.pixel.dcservice  I  onReceive ACTION_MONITOR_MEDIA_PLAYBACK_STOPPED
+2026-01-25 17:01:14.130  2829-2869  WindowManagerShell      com.android.systemui                 V  Transition doesn't have explicit remote, search filters for match for {id=44671 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x7c272a9 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},{m=CLOSE f=NONE leash=Surface(name=Task=15475)/@0x470802e sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fc6d111})/@0xc88c7cf sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0}]}
+2026-01-25 17:01:14.130  2829-2869  WindowManagerShell      com.android.systemui                 V   Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@fffe7aa windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@79f9b, appThread = android.app.IApplicationThread$Stub$Proxy@2c25f38, debugName = overlayBackTransition }}
+2026-01-25 17:01:14.130  2829-2869  WindowManagerShell      com.android.systemui                 V   Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@315cb11, appThread = android.app.IApplicationThread$Stub$Proxy@44cd476, debugName = LauncherToDream }}
+2026-01-25 17:01:14.130  2829-2869  WindowManagerShell      com.android.systemui                 V   Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@6b69a77, appThread = android.app.IApplicationThread$Stub$Proxy@dda36e4, debugName = QuickstepLaunchHome }}
+2026-01-25 17:01:14.130  2829-2869  RemoteTransitionHandler com.android.systemui                 D  Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@6b69a77, appThread = android.app.IApplicationThread$Stub$Proxy@dda36e4, debugName = QuickstepLaunchHome }}
+2026-01-25 17:01:14.130  2829-2869  WindowManagerShell      com.android.systemui                 V   Delegate animation for (#44671) to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@6b69a77, appThread = android.app.IApplicationThread$Stub$Proxy@dda36e4, debugName = QuickstepLaunchHome }
+2026-01-25 17:01:14.132  1668-1788  WindowManager           system_server                        V  Sent Transition (#44671) createdAt=01-25 17:01:14.049 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=15475 effectiveUid=10494 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.example.kaosseffect/.MainActivity } baseActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} topActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} origActivity=null realActivity=ComponentInfo{com.example.kaosseffect/com.example.kaosseffect.MainActivity} numActivities=1 lastActiveTime=4342963963 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1f620f9 Task{32c7b8d #15475 type=standard A=10494:com.example.kaosseffect}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{d6e183e com.example.kaosseffect.MainActivity} launchCookies=[android.os.BinderProxy@137669f] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(266, 695 - 814, 1775) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 173 - 1080, 2298) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactiveundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 44671 }
+2026-01-25 17:01:14.132  1668-1788  WindowManager           system_server                        V      startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+2026-01-25 17:01:14.132  1668-1788  WindowManager           system_server                        V      info={id=44671 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+                                                                                                            {WCT{RemoteToken{1e0c3ce Task{71e27b2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xeb54b0e sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},
+                                                                                                            {WCT{RemoteToken{1f620f9 Task{32c7b8d #15475 type=standard A=10494:com.example.kaosseffect}}} m=CLOSE f=NONE leash=Surface(name=Task=15475)/@0x90061fd sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0 taskParent=-1 winMode=1},
+                                                                                                            {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fc6d111})/@0xa755e10 sb=Rect(0, 0 - 1080, 2424) eb=Rect(0, 0 - 1080, 2424) epz=Point(1080, 2424) d=0}
+                                                                                                        ]}
+2026-01-25 17:01:14.133  2829-2869  WindowManagerShell      com.android.systemui                 V   animated by com.android.wm.shell.transition.RemoteTransitionHandler@d56301b
+2026-01-25 17:01:14.133  2829-2869  Bubbles                 com.android.systemui                 D  onLocusVisibilityChanged=Overview|DISABLED visible=true taskId=1
+2026-01-25 17:01:14.136  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.136  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.136  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.136  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.136  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.137  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-2748  Background...rolService system_server                        D  Package event received: 0
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138 29046-29046 b/311077782             com...le.android.apps.nexuslauncher  D  LauncherAnimationRunner.setAnimation
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.138  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-2748  Background...rolService system_server                        D  Package event received: 0
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.139  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.140  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.144  1668-1791  libbinder....hreadState system_server                        W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.144  1668-1791  ProcessStats            system_server                        W  Tracking association SourceState{1510a1a com.android.settings/1000 Service #7358464} whose proc state 8 is better than process ProcessState{7a39025 com.google.android.apps.wellbeing/10190 pkg=com.google.android.apps.wellbeing} proc state 15 (32 skipped)
+2026-01-25 17:01:14.146   758-781   PowerSavingModeHandler  com....android.apps.pixel.dcservice  I  shouldSwitchCodecToLowPower, isPowerSaveMode=false
+2026-01-25 17:01:14.146   758-781   PowerSavingModeHandler  com....android.apps.pixel.dcservice  I  maybeSwitchCodecForLeavingLowPower, no configured device
+2026-01-25 17:01:14.146   758-781   PowerSavingModeHandler  com....android.apps.pixel.dcservice  I  maybeSwitchCodec completed
+2026-01-25 17:01:14.150  1068-16209 AHal::Audi...Controller and...rdware.audio.service-aidl.aoc  I  ResetPath: mmap-playback-0 -> speaker: true
+2026-01-25 17:01:14.150  1068-16209 AHal::Audi...Controller and...rdware.audio.service-aidl.aoc  I  ResetPath: speaker: true
+2026-01-25 17:01:14.150  1068-16209 AHal::Speaker           and...rdware.audio.service-aidl.aoc  I  Disable: speaker
+2026-01-25 17:01:14.151  1068-16209 AHal::Audi...Controller and...rdware.audio.service-aidl.aoc  I  ResetPath: hostless-ulC spk-vi: true
+2026-01-25 17:01:14.151  1068-16209 AHal::Tiny...Operations and...rdware.audio.service-aidl.aoc  I  Stop: pcm_close card_index 0 device 15
+2026-01-25 17:01:14.151  1068-16209 AHal::BatteryMitigation and...rdware.audio.service-aidl.aoc  I  UpdateState: Standby -> Idle
+2026-01-25 17:01:14.151  1068-16209 AHal::Adap...uteControl and...rdware.audio.service-aidl.aoc  I  Update: update route from adapted-speaker to null
+2026-01-25 17:01:14.152  1068-16209 AHal::Audi...Controller and...rdware.audio.service-aidl.aoc  I  ResetPath: adapted-speaker: true
+2026-01-25 17:01:14.152  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  LogTransferring: Transferring (1):
+2026-01-25 17:01:14.152  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  LogTransferring:   mmap-playback-0 -> speaker => (null)
+2026-01-25 17:01:14.152  1068-16209 AHal::Play...emperature and...rdware.audio.service-aidl.aoc  I  Update Temperature: kOnce to kIdle
+2026-01-25 17:01:14.152  1068-16209 AHal::Play...eakerPower and...rdware.audio.service-aidl.aoc  I  Update Speaker Power: kPolling to kIdle
+2026-01-25 17:01:14.152  1068-16209 AHal::Play...eakerPower and...rdware.audio.service-aidl.aoc  I  Update: update atom SpeakerPowerAtom: speaker_0: {Average Power: 0 Duration (Second): 1} speaker_1: {Average Power: 0 Duration (Second): 1}
+2026-01-25 17:01:14.152  1068-1973  AHal::Batt...ptiveAudio and...rdware.audio.service-aidl.aoc  I  ProcessPlaybackTunerControl: update playback tuner with Bypassed
+2026-01-25 17:01:14.152  1068-16209 AHal::VoiceCall         and...rdware.audio.service-aidl.aoc  I  Update: reset echo reference device
+2026-01-25 17:01:14.152  1068-16209 AHal::Router            and...rdware.audio.service-aidl.aoc  I  InvalidateLocked: ============ apply graph #77231 end ============
+2026-01-25 17:01:14.152  1068-16209 ASvc::PeriodicWorker    and...rdware.audio.service-aidl.aoc  I  SetLinkedConfigIds: update linked configs []
+2026-01-25 17:01:14.152  1068-16209 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  UpdateSourceMetadata - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.152  1068-16209 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  UpdateSinkMetadata - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_DECODING_DATAPATH has NO session
+2026-01-25 17:01:14.152  1068-16209 AHal::Mmap...Operations and...rdware.audio.service-aidl.aoc  E  GetHardwarePosition: pcm_mmap_get_hw_ptr failed pcm_sync_ptr failed: File descriptor in bad state
+2026-01-25 17:01:14.152  1668-2696  ConnectivityService     system_server                        D  NetReassign [no changes] [c 5] [a 1] [i 14]
+2026-01-25 17:01:14.154  1068-1977  AHal::Cs35l43Codec      and...rdware.audio.service-aidl.aoc  I  skip health data provide
+2026-01-25 17:01:14.156  1068-6189  ASvc::StreamOut         and...rdware.audio.service-aidl.aoc  I  setHwVolume (mmap-playback) : do not support HW volume control
+2026-01-25 17:01:14.157  1143-16210 AAudioServ...dpointMMAP audioserver                          D  onVolumeChanged() volume = 0.000000
+2026-01-25 17:01:14.157  1068-17947 AHal::UseCase           and...rdware.audio.service-aidl.aoc  D  SetActiveTracks: update mmap-playback active tracks(0)
+2026-01-25 17:01:14.157  1068-17947 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  UpdateSourceMetadata - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.157  1068-17947 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  GetSupportedLatencyModes - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.157  1068-17947 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  SetLatencyMode - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.157  1068-17947 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  GetSupportedLatencyModes - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.157  1068-17947 BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  SetLatencyMode - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.157 29046-29046 ImeBackDispatcher       com...le.android.apps.nexuslauncher  D  switch root view (mImeCallbacks.size=0)
+2026-01-25 17:01:14.157 29046-29046 BaseActivity            com...le.android.apps.nexuslauncher  D  Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+2026-01-25 17:01:14.158  1143-16215 AudioStrea...al_Service audioserver                          D  onEventFromServer - AAUDIO_SERVICE_EVENT_VOLUME 0.000000
+2026-01-25 17:01:14.158  1143-16215 AudioStrea...ay_Service audioserver                          D  doSetVolume() mStreamVolume * duckAndMuteVolume = 0.000000 * 1.000000 = 0.000000
+2026-01-25 17:01:14.159  1143-16211 AAudioServ...dpointMMAP audioserver                          D  stopClient(52811): returning 0
+2026-01-25 17:01:14.159  1068-16209 AHal::Mmap...Operations and...rdware.audio.service-aidl.aoc  E  GetHardwarePosition: pcm_mmap_get_hw_ptr failed pcm_sync_ptr failed: File descriptor in bad state
+2026-01-25 17:01:14.159  1143-16211 StreamHalAidl           audioserver                          W  [out|ioHandle:11117] getHardwarePosition: No position was reported by the HAL
+2026-01-25 17:01:14.159  1143-16211 StreamHalAidl           audioserver                          E  Function: getMmapPosition Line: 782 Failed
+2026-01-25 17:01:14.159  1143-16211 AAudioServ...dpointMMAP audioserver                          W  getFreeRunningPosition(): change INVALID_OPERATION to NOT_ENOUGH_DATA
+2026-01-25 17:01:14.159  1143-16211 AAudioServ...dpointMMAP audioserver                          W  getFreeRunningPosition(): getMmapPosition() has no position data available
+2026-01-25 17:01:14.159  1143-16211 StreamHalAidl           audioserver                          W  [out|ioHandle:11117] getHardwarePosition: No position was reported by the HAL
+2026-01-25 17:01:14.159  1143-16211 StreamHalAidl           audioserver                          E  Function: getMmapPosition Line: 782 Failed
+2026-01-25 17:01:14.159  1143-16211 AAudioServ...dpointMMAP audioserver                          W  getFreeRunningPosition(): change INVALID_OPERATION to NOT_ENOUGH_DATA
+2026-01-25 17:01:14.159  1143-16211 AAudioServ...dpointMMAP audioserver                          W  getFreeRunningPosition(): getMmapPosition() has no position data available
+2026-01-25 17:01:14.161  1668-2596  ImeTracker              system_server                        I  com.google.android.apps.nexuslauncher:e6dd415e: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+2026-01-25 17:01:14.162 29046-29046 InsetsController        com...le.android.apps.nexuslauncher  D  hide(ime())
+2026-01-25 17:01:14.162 29046-29046 ImeTracker              com...le.android.apps.nexuslauncher  I  com.google.android.apps.nexuslauncher:e6dd415e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-01-25 17:01:14.162  1143-16215 AAudioServ...dpointPlay audioserver                          D  callbackLoop() exiting, enabled = 0, state = 4, result = 96 <<<<<<<<<<<<< MIXER
+2026-01-25 17:01:14.165  1143-16212 AAudioStream            audioserver                          D  joinThread_l() pthread_join succeeded
+2026-01-25 17:01:14.165  1143-16212 AudioStrea...al_Service audioserver                          D  stopCallback_l() skipped, isDataCallbackSet() = 0, isActive() = 1, getState()  = 4
+2026-01-25 17:01:14.168 21146-21146 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onFinishInput():2092
+2026-01-25 17:01:14.169 21146-21146 Module                  com...gle.android.inputmethod.latin  I  DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+2026-01-25 17:01:14.169 21146-21146 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onStartInput():1349 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+2026-01-25 17:01:14.169  1143-16212 AudioStrea...ay_Service audioserver                          D  prepareBuffersForStop() hardwareLatencyNanos = 2126053
+2026-01-25 17:01:14.170  1668-2550  ImeTracker              system_server                        I  system_server:2d540b7c: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+2026-01-25 17:01:14.170  1668-1791  ImeTracker              system_server                        I  system_server:2d540b7c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+2026-01-25 17:01:14.170 21146-21146 Module                  com...gle.android.inputmethod.latin  I  DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+2026-01-25 17:01:14.171  1668-2550  PackageConfigPersister  system_server                        W  App-specific configuration not found for packageName: com.google.android.apps.nexuslauncher and userId: 0
+2026-01-25 17:01:14.174  1143-16212 IsochronousClockModel   audioserver                          D  stop(nanos = 2667250152118616) max lateness = 1115 micros, DSP stalled 0 times
+2026-01-25 17:01:14.174  1143-16212 AAudioStream            audioserver                          D  setState(s#389) from 4 to 9
+2026-01-25 17:01:14.174  1143-16211 AAudioServiceStreamBase audioserver                          D  run() got COMMAND opcode 2 after 3229 loops
+2026-01-25 17:01:14.174  1143-16211 AAudioServ...dpointMMAP audioserver                          D  stopClient(52810): returning 0
+2026-01-25 17:01:14.174  1143-16211 AAudioServ...dpointMMAP audioserver                          D  stopStream(0): called stopClient(52810=mPortHandle), returning 0
+2026-01-25 17:01:14.174  1143-16212 AAudioServiceStreamBase audioserver                          W  writeUpMessageQueue(): Queue full. Did client stop? Suspending stream. what = 3, Shared
+2026-01-25 17:01:14.174  1143-16212 AAudioStream            audioserver                          D  joinThread() - but has no thread or already join()ed
+2026-01-25 17:01:14.174  1143-16212 AudioStrea...al_Service audioserver                          D  release_l(): mServiceStreamHandle = 0x00000401
+2026-01-25 17:01:14.174  1143-16212 AAudioStream            audioserver                          D  setState(s#389) from 9 to 11
+2026-01-25 17:01:14.174  1143-16211 AAudioServiceStreamBase audioserver                          D  run() got COMMAND opcode 4 after 3230 loops
+2026-01-25 17:01:14.174  1143-16211 AAudioServ...dpointMMAP audioserver                          D  close_l() clear mMmapStream
+2026-01-25 17:01:14.174  1143-16211 AudioFlinger            audioserver                          D  disconnect: localPortId = 52810
+2026-01-25 17:01:14.177  1143-16210 DeviceHalAidl           audioserver                          D  [default] releaseAudioPatch: patch: 3914
+2026-01-25 17:01:14.177  1143-16210 Hal2AidlMapper          audioserver                          D  [default] releaseAudioPatch: patchId 3914
+2026-01-25 17:01:14.178  1068-6189  ASvc::Module            and...rdware.audio.service-aidl.aoc  I  resetAudioPatch: patch id = 3914
+2026-01-25 17:01:14.178  1068-6189  AHal::Router            and...rdware.audio.service-aidl.aoc  I  InvalidateLocked: nothing change between graph #77231 and #77232
+2026-01-25 17:01:14.178  1068-6189  BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  UpdateSourceMetadata - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.178  1068-6189  BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  GetSupportedLatencyModes - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.178  1068-6189  BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  SetLatencyMode - SessionType=LE_AUDIO_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.178  1068-6189  BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  GetSupportedLatencyModes - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.178  1068-6189  BTAudioSessionAidl      and...rdware.audio.service-aidl.aoc  D  SetLatencyMode - SessionType=A2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session
+2026-01-25 17:01:14.182  1143-2374  AudioFlinger            audioserver                          D  closing mmapThread 0xb4000076ba96dda0
+2026-01-25 17:01:14.182  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.182  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.182  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.182  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.182  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.183  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.183  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.182 27517-28014 AiAiEcho                com.google.android.as                I  (REDACTED) Predicting[%d]: %s
+2026-01-25 17:01:14.183  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.183  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.183  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.183  1143-2374  AudioFlinger            audioserver                          D  mmapThread exit()
+2026-01-25 17:01:14.183  1143-16210 StreamHalAidl           audioserver                          D  [out|ioHandle:11117] standby
+2026-01-25 17:01:14.184  1068-16209 ASvc::CommandWorker     and...rdware.audio.service-aidl.aoc  I  cw-mmap-playback: Command{standby: Void{}} in StreamOutIdleState
+2026-01-25 17:01:14.184  1068-16209 AHal::Mmap...Operations and...rdware.audio.service-aidl.aoc  E  GetHardwarePosition: pcm_mmap_get_hw_ptr failed pcm_sync_ptr failed: File descriptor in bad state
+2026-01-25 17:01:14.184 27517-28014 AiAiEcho                com.google.android.as                I  (REDACTED) EchoTargets: %s
+                                                                                                    Filtered by AiAi flag check: %s
+2026-01-25 17:01:14.185  1143-2374  StreamHalAidl           audioserver                          D  [out|ioHandle:11117] ~StreamHalAidl
+2026-01-25 17:01:14.185 27517-28014 AiAiEcho                com.google.android.as                I  (REDACTED) #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: %s
+2026-01-25 17:01:14.185  1068-17947 ASvc::StreamCommonImpl  and...rdware.audio.service-aidl.aoc  I  close (mmap-playback) : closing mmap-playback, on 404917
+2026-01-25 17:01:14.185 27517-28014 AiAiEcho                com.google.android.as                I  #remoteViewsTwiddler: feature disabled.
+2026-01-25 17:01:14.185  1068-16209 ASvc::CommandWorker     and...rdware.audio.service-aidl.aoc  I  cw-mmap-playback: exit command form HAL
+2026-01-25 17:01:14.185  1068-16209 AUtl::Worker            and...rdware.audio.service-aidl.aoc  I  Loop: cw-mmap-playback thread exit
+2026-01-25 17:01:14.186  1068-16208 AUtl::Worker            and...rdware.audio.service-aidl.aoc  I  Loop: pw-mmap-playback thread exit
+2026-01-25 17:01:14.188 27517-28014 AiAiEcho                com.google.android.as                I  (REDACTED) %s No tracked ambient data found for ID: %s; for event type: %d, skipping event processing.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.188  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.189  1143-2374  libbinder....hreadState audioserver                          W  Sending oneway calls to frozen process.
+2026-01-25 17:01:14.193 27517-28014 AiAiEcho                com.google.android.as                I  (REDACTED) #postPredictionTargets: Sending updates to UISurface %s with targets# %s (types=[%s])
+2026-01-25 17:01:14.194  1143-6010  NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.194  1143-11591 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.197  1143-14191 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.197  1143-14191 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.198  1143-14191 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.198  1143-14191 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.201  1143-11591 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.202  1143-14191 NativePerm...Controller audioserver                          D  checkPermission: missing 13 for 10310
+2026-01-25 17:01:14.275  1143-16211 AAudioServiceEndpoint   audioserver                          D  ~AAudioServiceEndpoint() called
+2026-01-25 17:01:14.275  1143-16211 AAudioServiceStreamBase audioserver                          D  run() MMAP exiting after 3231 loops <<<<<<<<<<<<<< COMMANDS
+2026-01-25 17:01:14.276  1143-16212 AAudioServiceStreamBase audioserver                          D  ~AAudioServiceStreamBase() called
+2026-01-25 17:01:14.276  1143-16212 AAudioStream            audioserver                          D  setState(s#389) from 11 to 11
+2026-01-25 17:01:14.276  1143-16212 AAudioStream            audioserver                          D  setState(s#389) from 11 to 12
+2026-01-25 17:01:14.276  1143-16212 AudioStrea...al_Service audioserver                          D  ~AudioStreamInternal() 0xb4000076ca92f7a0 called
+2026-01-25 17:01:14.277  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 275: CNTRL: cmd ID: 0x00d4, tag: 0x29 [cntr = 705237]
+2026-01-25 17:01:14.277  1143-16212 AAudioStream            audioserver                          D  ~AudioStream(s#389) mPlayerBase strongCount = 1
+2026-01-25 17:01:14.277  1359-1359  AOC                     aocd                                 D  A3:MSG: controller.cc, 933: CNTRL: ipc: control, cmd ID: 0x00d4, tag: 0x29, rc: 0
+2026-01-25 17:01:14.277  1143-16212 audioserver             audioserver                          D  PlayerBase::~PlayerBase()
+2026-01-25 17:01:14.277  1143-16212 AAudioServiceEndpoint   audioserver                          D  ~AAudioServiceEndpoint() called
+2026-01-25 17:01:14.279  1143-16212 AAudioServiceStreamBase audioserver                          D  run() Shared exiting after 258 loops <<<<<<<<<<<<<< COMMANDS
+2026-01-25 17:01:14.280  1143-18231 AAudioServiceStreamBase audioserver                          D  ~AAudioServiceStreamBase() called
+2026-01-25 17:01:14.474  1340-16177 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c0c88 : 66(632914 size) total buffers - 1(20417 size) used buffers - 13/394 (recycle/alloc) - 380/393 (fetch/transfer)
+2026-01-25 17:01:14.523  2829-2869  WindowManagerShell      com.android.systemui                 V  Transition animation finished (aborted=false), notifying core (#44671) android.os.BinderProxy@80d2773@0
+2026-01-25 17:01:14.529  1668-1788  WindowManager           system_server                        V  Finish Transition (#44671): created at 01-25 17:01:14.049 collect-started=0.057ms request-sent=0.562ms started=9.898ms ready=48.205ms sent=71.472ms commit=25.035ms finished=479.811ms
+2026-01-25 17:01:14.529  1668-4805  libbinder....hreadState system_server                        E  Binder transaction failure. id: 1494755260, BR_*: 29189, error: -22 (Invalid argument)
+2026-01-25 17:01:14.529  1668-4805  ActivityManager         system_server                        W  pid 1668 system sent binder code 7 with flags 1 and got error -32
+2026-01-25 17:01:14.530  1668-4805  WindowManager           system_server                        W  Exception thrown during dispatchAppVisibility Window{b838fd9 u0 com.example.kaosseffect/com.example.kaosseffect.MainActivity EXITING} (Fix with AI)
+                                                                                                    android.os.DeadObjectException
+                                                                                                    	at android.os.BinderProxy.transactNative(Native Method)
+                                                                                                    	at android.os.BinderProxy.transact(BinderProxy.java:592)
+                                                                                                    	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:538)
+                                                                                                    	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3183)
+                                                                                                    	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1233)
+                                                                                                    	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:394)
+                                                                                                    	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5546)
+                                                                                                    	at com.android.server.wm.Transition.finishTransition(Transition.java:1485)
+                                                                                                    	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1048)
+                                                                                                    	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:514)
+                                                                                                    	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:270)
+                                                                                                    	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:230)
+                                                                                                    	at android.os.Binder.execTransactInternal(Binder.java:1446)
+                                                                                                    	at android.os.Binder.execTransact(Binder.java:1385)
+2026-01-25 17:01:14.530  1668-4805  Process                 system_server                        W  Unable to open /proc/16183/status
+2026-01-25 17:01:14.530 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  No text view can be set up
+2026-01-25 17:01:14.531 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  setFormattedContentDescription: text=-14°C, iconDescription=Cloudy, contentDescription=Cloudy, -14°C
+2026-01-25 17:01:14.531 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2026-01-25 17:01:14.531 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2026-01-25 17:01:14.531 29046-29046 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  Secondary card pane is null
+2026-01-25 17:01:14.533  2829-2869  WindowManagerShell      com.android.systemui                 V  Track 0 became idle
+2026-01-25 17:01:14.534  2829-2869  WindowManagerShell      com.android.systemui                 V  All active transition animations finished
+2026-01-25 17:01:14.535 29046-29046 RecentsView             com...le.android.apps.nexuslauncher  D  onTaskRemoved: 15475, not handling task stack changes
+2026-01-25 17:01:14.535 29046-29046 RecentsView             com...le.android.apps.nexuslauncher  D  onTaskRemoved: 15475, not handling task stack changes
+2026-01-25 17:01:14.539  1668-4805  ActivityTaskManager     system_server                        W  takeTaskSnapshot: taskId=15475 not found or not visible
+2026-01-25 17:01:14.552  1668-1791  ActivityTaskManager     system_server                        W  Activity top resumed state loss timeout for ActivityRecord{22271012 u0 com.example.kaosseffect/.MainActivity t-1 f}}
+2026-01-25 17:01:14.552   550-550   BpTransact...edListener surfaceflinger                       E  Failed to transact (-32)
+2026-01-25 17:01:14.554 29046-29046 Choreographer           com...le.android.apps.nexuslauncher  W  Frame time is 0.012275 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+2026-01-25 17:01:14.660  1340-16177 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c0c88 : 66(964831 size) total buffers - 1(21373 size) used buffers - 13/411 (recycle/alloc) - 397/410 (fetch/transfer)
+2026-01-25 17:01:15.087  1340-16177 AidlBufferPool          media.swcodec                        D  bufferpool2 0xb4000073684c0c88 : 66(1116987 size) total buffers - 1(2647 size) used buffers - 13/428 (recycle/alloc) - 414/427 (fetch/transfer)
+2026-01-25 17:01:15.615  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-SPEAKER-MODEL: model_input: [33250.00 29863.00 29626.00 31058.00 31800.00 31532.00 32433.00 29440.00 ]
+2026-01-25 17:01:15.616  1629-1659  native                  and...ardware.thermal-service.pixel  I  I0000 00:00:1769353275.615632    1659 thermal_tflite_wrapper.cc:261] ThermalTfliteInvoke
+2026-01-25 17:01:15.616  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-SPEAKER-MODEL: model_output: [29690.6 ]
+2026-01-25 17:01:15.616  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-SPEAKER-MODEL: predicted_value: [29690.6 ]
+2026-01-25 17:01:15.617  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  VIRTUAL-SKIN-SPEAKER:29.7701 raw data: VIRTUAL-SKIN-SPEAKER:29770.1 VIRTUAL-SKIN-SPEAKER-LEGACY:30525 VIRTUAL-SKIN-SPEAKER-LEGACY-MODEL-DIFF:834.426 VIRTUAL-SKIN-SPEAKER-MODEL:29690.6 VIRTUAL-SKIN-SPEAKER-MODEL-CLAMPED:29690.6 VIRTUAL-SKIN-SPEAKER-MODEL-LEGACY-DIFF:-834.426 VIRTUAL-SKIN-SPEAKER-MODEL-UPPER-CLAMPED:29690.6 VIRTUAL-SKIN-SPEAKER-SUB-0:30525 VIRTUAL-SKIN-SPEAKER-SUB-1:30456.4 VT_SPEAKER_LEGACY_WEIGHT:0 VT_SPEAKER_MODEL_WEIGHT:1 charging_therm:33250 disp0_therm:29863 flash_therm:29626 north_therm:31058 quiet_therm:31800 rfpa_therm:31532 soc_therm:32433 usb_pwr_therm:29440
+2026-01-25 17:01:15.643  1629-1659  pixel-thermal           and...ardware.thermal-service.pixel  I  rfpa_therm:31.532 raw data: rfpa_therm:31532

@@ -1,0 +1,71 @@
+package com.example.kaosseffect
+
+object AudioBridge {
+    init {
+        System.loadLibrary("native-lib")
+    }
+
+    private external fun nativeStart()
+    private external fun nativeStop()
+    private external fun nativeSetXY(x: Float, y: Float)
+    private external fun nativeSetEffectMode(mode: Int)
+    private external fun nativeIsPlaying(): Boolean
+    
+    private external fun nativeLoadFile(fd: Int, offset: Long, size: Long): Boolean
+    private external fun nativePlay()
+    private external fun nativePause()
+    private external fun nativeRewindStop()
+    private external fun nativeSeekTo(positionMs: Long)
+    private external fun nativeGetDurationMs(): Long
+    private external fun nativeGetPositionMs(): Long
+
+    fun start() {
+        nativeStart()
+    }
+
+    // Lifecycle stop
+    fun stop() {
+        nativeStop()
+    }
+    
+    // Transport controls
+    fun loadFile(fd: Int, offset: Long, size: Long): Boolean {
+        return nativeLoadFile(fd, offset, size)
+    }
+    
+    fun play() {
+        nativePlay()
+    }
+    
+    fun pause() {
+        nativePause()
+    }
+    
+    fun stopPlayback() {
+        nativeRewindStop()
+    }
+    
+    fun seekTo(positionMs: Long) {
+        nativeSeekTo(positionMs)
+    }
+    
+    fun getDurationMs(): Long {
+        return nativeGetDurationMs()
+    }
+    
+    fun getPositionMs(): Long {
+        return nativeGetPositionMs()
+    }
+
+    fun setXY(x: Float, y: Float) {
+        nativeSetXY(x, y)
+    }
+
+    fun setEffectMode(mode: Int) {
+        nativeSetEffectMode(mode)
+    }
+
+    fun isPlaying(): Boolean {
+        return nativeIsPlaying()
+    }
+}

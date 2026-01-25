@@ -1,0 +1,21 @@
+# ninja log v5
+0	42	1769341421966925775	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-mkdir	11a04f85ba105603
+0	42	1769341421966925775	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-mkdir	11a04f85ba105603
+42	12540	1769341434465006398	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-download	ec12cdb40c78f6d6
+42	12540	1769341434465006398	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-download	ec12cdb40c78f6d6
+12540	12589	0	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-update	18b68c3bb34ca13a
+12540	12589	0	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-update	18b68c3bb34ca13a
+12589	12603	1769341434528456063	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-patch	b45f6138f31bdf92
+12589	12603	1769341434528456063	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-patch	b45f6138f31bdf92
+12603	12616	1769341434540806434	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-configure	47bb623fc4995f59
+12603	12616	1769341434540806434	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-configure	47bb623fc4995f59
+12616	12629	1769341434553741103	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-build	37fe432dffe8aebc
+12616	12629	1769341434553741103	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-build	37fe432dffe8aebc
+12629	12642	1769341434567310528	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-install	3eec52e7be090cc3
+12629	12642	1769341434567310528	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-install	3eec52e7be090cc3
+12642	12656	1769341434580682993	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-test	37bd1b357b0b5bb6
+12642	12656	1769341434580682993	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-test	37bd1b357b0b5bb6
+12656	12675	1769341434600062975	CMakeFiles/oboe-populate-complete	f385bcb55d8943f9
+12656	12675	1769341434600062975	oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-done	f385bcb55d8943f9
+12656	12675	1769341434600062975	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/CMakeFiles/oboe-populate-complete	f385bcb55d8943f9
+12656	12675	1769341434600062975	/Users/anton/AntigravityProjects/KaossEffect/app/.cxx/Debug/4472m1b6/arm64-v8a/_deps/oboe-subbuild/oboe-populate-prefix/src/oboe-populate-stamp/oboe-populate-done	f385bcb55d8943f9
