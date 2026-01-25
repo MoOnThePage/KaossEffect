@@ -12,3 +12,9 @@ val FilterOrange = Color(0xFFFF6B00)
 val DelayCyan = Color(0xFF00E5FF)
 val BitcrushLime = Color(0xFF76FF03)
 val FlangerPurple = Color(0xFFE040FB)
+
+val RingModBlueGrey = Color(0xFF607D8B)
+
+val PhaserYellow = Color(0xFFFFEB3B)
+
+val ReverbPurple = Color(0xFF9C27B0)

@@ -22,6 +22,9 @@ import com.example.kaosseffect.ui.theme.BitcrushLime
 import com.example.kaosseffect.ui.theme.DelayCyan
 import com.example.kaosseffect.ui.theme.FilterOrange
 import com.example.kaosseffect.ui.theme.FlangerPurple
+import com.example.kaosseffect.ui.theme.PhaserYellow
+import com.example.kaosseffect.ui.theme.ReverbPurple
+import com.example.kaosseffect.ui.theme.RingModBlueGrey
 
 @Composable
 fun EffectModeSelector(
@@ -36,10 +39,10 @@ fun EffectModeSelector(
         listOf(
             FilterOrange,
             DelayCyan,
-            Color(0xFF9C27B0), // Reverb Purple
-            Color(0xFFFFEB3B), // Phaser Yellow
-            BitcrushLime,      // Crush Lime
-            Color(0xFF607D8B)  // RingMod BlueGrey
+            ReverbPurple,
+            PhaserYellow,
+            BitcrushLime,
+            RingModBlueGrey
         )
 
     Column(

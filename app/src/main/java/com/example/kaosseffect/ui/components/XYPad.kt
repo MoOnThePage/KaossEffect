@@ -32,6 +32,9 @@ import com.example.kaosseffect.ui.theme.BitcrushLime
 import com.example.kaosseffect.ui.theme.DelayCyan
 import com.example.kaosseffect.ui.theme.FilterOrange
 import com.example.kaosseffect.ui.theme.FlangerPurple
+import com.example.kaosseffect.ui.theme.PhaserYellow
+import com.example.kaosseffect.ui.theme.ReverbPurple
+import com.example.kaosseffect.ui.theme.RingModBlueGrey
 
 @Composable
 fun XYPad(
@@ -108,10 +111,10 @@ fun XYPad(
         when (effectMode) {
             0 -> FilterOrange
             1 -> DelayCyan
-            2 -> Color(0xFF9C27B0) // Reverb Purple
-            3 -> Color(0xFFFFEB3B) // Phaser Yellow
-            4 -> BitcrushLime      // Crush Lime
-            5 -> Color(0xFF607D8B) // RingMod BlueGrey
+            2 -> ReverbPurple
+            3 -> PhaserYellow
+            4 -> BitcrushLime
+            5 -> RingModBlueGrey
             else -> Color.White
         }
     }
