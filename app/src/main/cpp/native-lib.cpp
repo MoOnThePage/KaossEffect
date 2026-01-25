@@ -118,3 +118,18 @@ Java_com_example_kaosseffect_AudioBridge_nativeIsPlaying(JNIEnv *env,
     return false;
   }
 }
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_example_kaosseffect_AudioBridge_nativeGetVisualizerData(
+    JNIEnv *env, jobject /* this */, jfloatArray buffer) {
+  try {
+    jfloat *nativeBuffer = env->GetFloatArrayElements(buffer, nullptr);
+    jint length = env->GetArrayLength(buffer);
+    int copied =
+        AudioEngine::getInstance()->getVisualizerData(nativeBuffer, length);
+    env->ReleaseFloatArrayElements(buffer, nativeBuffer, 0);
+    return copied;
+  } catch (...) {
+    return 0;
+  }
+}

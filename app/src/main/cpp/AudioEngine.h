@@ -33,6 +33,8 @@ public:
   int64_t getDurationMs();
   int64_t getPositionMs();
 
+  int getVisualizerData(float *buffer, int size);
+
   oboe::DataCallbackResult onAudioReady(oboe::AudioStream *audioStream,
                                         void *audioData,
                                         int32_t numFrames) override;
@@ -61,6 +63,12 @@ private:
 
   // Test tone phase
   float phase_ = 0.0f;
+
+  // Visualizer
+  std::vector<float> visualizerBuffer_;
+  std::mutex visualizerMutex_;
+  static constexpr int kVisualizerBufferSize = 256;
+  std::atomic<int> visualizerSampleCount_{0};
 
   static constexpr int kSampleRate = 44100;
   static constexpr int kChannelCount = 2;

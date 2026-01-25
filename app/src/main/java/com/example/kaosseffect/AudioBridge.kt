@@ -17,7 +17,9 @@ object AudioBridge {
     private external fun nativeRewindStop()
     private external fun nativeSeekTo(positionMs: Long)
     private external fun nativeGetDurationMs(): Long
+
     private external fun nativeGetPositionMs(): Long
+    private external fun nativeGetVisualizerData(buffer: FloatArray): Int
 
     fun start() {
         nativeStart()
@@ -55,6 +57,10 @@ object AudioBridge {
     
     fun getPositionMs(): Long {
         return nativeGetPositionMs()
+    }
+
+    fun getVisualizerData(buffer: FloatArray): Int {
+        return nativeGetVisualizerData(buffer)
     }
 
     fun setXY(x: Float, y: Float) {

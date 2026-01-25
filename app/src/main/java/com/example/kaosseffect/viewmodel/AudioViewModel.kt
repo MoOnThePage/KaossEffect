@@ -20,6 +20,7 @@ data class AudioUiState(
     val durationMs: Long = 0,
     val effectMode: Int = -1,
     val xyPosition: Pair<Float, Float> = 0.5f to 0.5f,
+    val visualizerData: FloatArray = FloatArray(0),
     val errorMessage: String? = null
 )
 
@@ -43,17 +44,26 @@ class AudioViewModel : ViewModel() {
             while (true) {
                 if (_uiState.value.isPlaying) {
                     val pos = AudioBridge.getPositionMs()
-                    // Auto-detect EOF if position >= duration (approx) or if engine stopped logic needs help
-                    // But engine updates isPlaying state? No, engine logic is separate.
-                    // We can check AudioBridge.isPlaying() to sync state if needed.
                     val enginePlaying = AudioBridge.isPlaying()
                     
-                    _uiState.update { it.copy(
-                        currentPositionMs = pos,
-                        isPlaying = enginePlaying
-                    ) }
+                    val visBuffer = FloatArray(256)
+                    val points = AudioBridge.getVisualizerData(visBuffer)
+                    
+                    _uiState.update { currentState ->
+                        val validData = if (points > 0) visBuffer.copyOfRange(0, points) else currentState.visualizerData
+                        currentState.copy(
+                            currentPositionMs = pos,
+                            isPlaying = enginePlaying,
+                            visualizerData = validData
+                        )
+                    }
+
+                } else {
+                    if (_uiState.value.visualizerData.isNotEmpty()) {
+                        _uiState.update { it.copy(visualizerData = FloatArray(0)) }
+                    }
                 }
-                delay(100)
+                delay(30) // Faster polling for smooth animation (was 100)
             }
         }
     }

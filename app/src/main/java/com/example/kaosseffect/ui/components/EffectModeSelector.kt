@@ -1,6 +1,7 @@
 package com.example.kaosseffect.ui.components
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -41,37 +42,46 @@ fun EffectModeSelector(
             Color(0xFF607D8B)  // RingMod BlueGrey
         )
 
-    Row(
+    Column(
         modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
+        verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        modes.forEachIndexed { index, title ->
-            val isSelected = currentMode == index
-            val color = modeColors[index]
-
-            OutlinedButton(
-                onClick = { onModeSelected(index) },
-                modifier = Modifier.weight(1f),
-                shape = RoundedCornerShape(8.dp),
-                colors = ButtonDefaults.outlinedButtonColors(
-                    containerColor = if (isSelected) color.copy(alpha = 0.2f) else Color.Transparent,
-                    contentColor = if (isSelected) color else MaterialTheme.colorScheme.onSurfaceVariant
-                ),
-                border = ButtonDefaults.outlinedButtonBorder.copy(
-                    brush = androidx.compose.ui.graphics.SolidColor(
-                        if (isSelected) color else MaterialTheme.colorScheme.outline
-                    )
-                ),
-                contentPadding = PaddingValues(0.dp)
+        val rows = modes.chunked(3)
+        rows.forEachIndexed { rowIndex, rowModes ->
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Text(
-                    text = title,
-                    fontSize = 10.sp,
-                    fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                    maxLines = 1
-                )
+                rowModes.forEachIndexed { colIndex, title ->
+                    val index = rowIndex * 3 + colIndex
+                    val isSelected = currentMode == index
+                    val color = modeColors[index]
+
+                    OutlinedButton(
+                        onClick = { onModeSelected(index) },
+                        modifier = Modifier.weight(1f),
+                        shape = RoundedCornerShape(8.dp),
+                        colors = ButtonDefaults.outlinedButtonColors(
+                            containerColor = if (isSelected) color.copy(alpha = 0.2f) else Color.Transparent,
+                            contentColor = if (isSelected) color else MaterialTheme.colorScheme.onSurfaceVariant
+                        ),
+                        border = ButtonDefaults.outlinedButtonBorder.copy(
+                            brush = androidx.compose.ui.graphics.SolidColor(
+                                if (isSelected) color else MaterialTheme.colorScheme.outline
+                            )
+                        ),
+                        contentPadding = PaddingValues(0.dp)
+                    ) {
+                        Text(
+                            text = title,
+                            fontSize = 12.sp, // Slightly larger font since we have more space
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                            maxLines = 1
+                        )
+                    }
+                }
             }
         }
     }

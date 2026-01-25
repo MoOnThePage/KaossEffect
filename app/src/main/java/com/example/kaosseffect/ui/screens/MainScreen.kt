@@ -114,7 +114,8 @@ fun MainScreen(
                 onPositionChanged = { x, y ->
                     viewModel.setXY(x, y)
                 },
-                effectMode = uiState.effectMode
+                effectMode = uiState.effectMode,
+                visualizerData = uiState.visualizerData
             )
 
             // Controls Section

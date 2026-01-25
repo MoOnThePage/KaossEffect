@@ -37,7 +37,8 @@ import com.example.kaosseffect.ui.theme.FlangerPurple
 fun XYPad(
     modifier: Modifier = Modifier,
     onPositionChanged: (x: Float, y: Float) -> Unit,
-    effectMode: Int = 0
+    effectMode: Int = 0,
+    visualizerData: FloatArray = FloatArray(0)
 ) {
     // State for normalized position (0.0 - 1.0)
     var currentX by remember { mutableFloatStateOf(0.5f) }
@@ -164,7 +165,6 @@ fun XYPad(
                     color = gridColor,
                     start = Offset(x, 0f),
                     end = Offset(x, height),
-                    strokeWidth = 1.dp.toPx()
                 )
             }
 
@@ -176,6 +176,25 @@ fun XYPad(
                     start = Offset(0f, y),
                     end = Offset(width, y),
                     strokeWidth = 1.dp.toPx()
+                )
+            }
+            
+            // Draw Waveform
+            if (visualizerData.isNotEmpty()) {
+                val wavePath = Path()
+                val stepX = width / visualizerData.size
+                val centerY = height / 2f
+                val amp = height * 0.4f 
+                
+                wavePath.moveTo(0f, centerY - visualizerData[0] * amp)
+                for (i in 1 until visualizerData.size) {
+                    wavePath.lineTo(i * stepX, centerY - visualizerData[i] * amp)
+                }
+                
+                drawPath(
+                    path = wavePath,
+                    color = themeColor.copy(alpha = 0.8f),
+                    style = Stroke(width = 2.dp.toPx())
                 )
             }
 

@@ -17,7 +17,9 @@ AudioEngine::AudioEngine() {
   reverb_ = std::make_unique<Reverb>(kSampleRate);
   phaser_ = std::make_unique<Phaser>(kSampleRate);
   bitcrusher_ = std::make_unique<Bitcrusher>(kSampleRate);
+  bitcrusher_ = std::make_unique<Bitcrusher>(kSampleRate);
   ringMod_ = std::make_unique<RingMod>(kSampleRate);
+  visualizerBuffer_.resize(kVisualizerBufferSize, 0.0f);
 }
 
 // Lifecycle methods
@@ -129,6 +131,19 @@ int64_t AudioEngine::getPositionMs() {
   return 0;
 }
 
+int AudioEngine::getVisualizerData(float *buffer, int size) {
+  std::lock_guard<std::mutex> lock(visualizerMutex_);
+  int validCount = visualizerSampleCount_.load();
+  int copySize =
+      std::min(size, std::min(validCount, (int)visualizerBuffer_.size()));
+
+  if (copySize > 0) {
+    std::copy(visualizerBuffer_.begin(), visualizerBuffer_.begin() + copySize,
+              buffer);
+  }
+  return copySize;
+}
+
 oboe::DataCallbackResult
 AudioEngine::onAudioReady(oboe::AudioStream *audioStream, void *audioData,
                           int32_t numFrames) {
@@ -229,6 +244,22 @@ AudioEngine::onAudioReady(oboe::AudioStream *audioStream, void *audioData,
 
     // Let's just use std::tanh, it's reliable and sounds good.
     outputData[i] = std::tanh(x);
+  }
+
+  // Capture for visualizer
+  if (numFrames > 0) {
+    std::lock_guard<std::mutex> lock(visualizerMutex_);
+    int captureSize = std::min((int)numFrames, kVisualizerBufferSize);
+
+    // Simple downsampling/copying: take every Nth sample or just first N
+    // Taking first N samples (Mono mix) is simplest and sufficient for waveform
+    for (int i = 0; i < captureSize; ++i) {
+      // Average L+R for mono
+      float left = outputData[i * kChannelCount];
+      float right = outputData[i * kChannelCount + 1];
+      visualizerBuffer_[i] = (left + right) * 0.5f;
+    }
+    visualizerSampleCount_.store(captureSize);
   }
 
   return oboe::DataCallbackResult::Continue;
