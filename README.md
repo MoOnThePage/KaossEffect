@@ -21,7 +21,8 @@ The app includes four custom DSP effects, implemented in high-performance C++ us
 
 ### 🎚 Interface & Controls
 *   **XY Pad**: Smooth, responsive touch surface for dynamic sound manipulation.
-*   **Effect Toggling**: Tap an effect to enable it. Tap the active effect again to bypass all effects.
+*   **Dual Effect Slots**: Chain two effects (A → B) with per-slot wet mix and slot-focused XY control.
+*   **Effect Toggling**: Tap an effect to enable it. Tap the active effect again to bypass that slot.
 *   **Transport Controls**: Play, Pause, Stop, and a precision Seekbar with time display (mm:ss).
 *   **Audio Focus**: Automatically pauses playback when interrupted (e.g., by a phone call).
 *   **Soft Clipper**: Integrated tube-like soft clipper on the master output to prevent digital distortion.

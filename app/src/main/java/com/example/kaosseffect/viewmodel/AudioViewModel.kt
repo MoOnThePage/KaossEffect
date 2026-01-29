@@ -18,8 +18,13 @@ data class AudioUiState(
     val isLoading: Boolean = false,
     val currentPositionMs: Long = 0,
     val durationMs: Long = 0,
-    val effectMode: Int = -1,
-    val xyPosition: Pair<Float, Float> = 0.5f to 0.5f,
+    val effectModeA: Int = -1,
+    val effectModeB: Int = -1,
+    val wetMixA: Float = 1.0f,
+    val wetMixB: Float = 1.0f,
+    val focusedSlot: Int = 0,
+    val xyPositionA: Pair<Float, Float> = 0.5f to 0.5f,
+    val xyPositionB: Pair<Float, Float> = 0.5f to 0.5f,
     val visualizerData: FloatArray = FloatArray(0),
     val errorMessage: String? = null
 )
@@ -134,13 +139,40 @@ class AudioViewModel : ViewModel() {
         _uiState.update { it.copy(currentPositionMs = positionMs) }
     }
 
-    fun setXY(x: Float, y: Float) {
-        AudioBridge.setXY(x, y)
-        _uiState.update { it.copy(xyPosition = x to y) }
+    fun setXY(slot: Int, x: Float, y: Float) {
+        AudioBridge.setXY(slot, x, y)
+        _uiState.update {
+            if (slot == 0) {
+                it.copy(xyPositionA = x to y)
+            } else {
+                it.copy(xyPositionB = x to y)
+            }
+        }
     }
 
-    fun setEffectMode(mode: Int) {
-        AudioBridge.setEffectMode(mode)
-        _uiState.update { it.copy(effectMode = mode) }
+    fun setEffectMode(slot: Int, mode: Int) {
+        AudioBridge.setEffectMode(slot, mode)
+        _uiState.update {
+            if (slot == 0) {
+                it.copy(effectModeA = mode)
+            } else {
+                it.copy(effectModeB = mode)
+            }
+        }
+    }
+
+    fun setWetMix(slot: Int, mix: Float) {
+        AudioBridge.setWetMix(slot, mix)
+        _uiState.update {
+            if (slot == 0) {
+                it.copy(wetMixA = mix.coerceIn(0f, 1f))
+            } else {
+                it.copy(wetMixB = mix.coerceIn(0f, 1f))
+            }
+        }
+    }
+
+    fun setFocusedSlot(slot: Int) {
+        _uiState.update { it.copy(focusedSlot = slot) }
     }
 }

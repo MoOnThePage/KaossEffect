@@ -3,12 +3,18 @@ package com.example.kaosseffect.ui.components
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -22,6 +28,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Box
 import androidx.compose.ui.Alignment
@@ -40,7 +47,13 @@ import com.example.kaosseffect.ui.theme.RingModBlueGrey
 fun XYPad(
     modifier: Modifier = Modifier,
     onPositionChanged: (x: Float, y: Float) -> Unit,
-    effectMode: Int = 0,
+    focusedSlot: Int = 0,
+    effectModeA: Int = -1,
+    effectModeB: Int = -1,
+    wetMixA: Float = 1f,
+    wetMixB: Float = 1f,
+    xyPosition: Pair<Float, Float> = 0.5f to 0.5f,
+    onFocusedWetMixChanged: (Float) -> Unit = {},
     visualizerData: FloatArray = FloatArray(0)
 ) {
     // State for normalized position (0.0 - 1.0)
@@ -49,6 +62,13 @@ fun XYPad(
     var isTouching by remember { mutableStateOf(false) }
 
     val view = androidx.compose.ui.platform.LocalView.current
+
+    androidx.compose.runtime.LaunchedEffect(xyPosition) {
+        if (!isTouching) {
+            currentX = xyPosition.first
+            currentY = xyPosition.second
+        }
+    }
     
     // Indicator opacity animation
     val indicatorAlpha by animateFloatAsState(
@@ -70,8 +90,12 @@ fun XYPad(
 
     // Effect Metadata
     data class EffectInfo(val xName: String, val yName: String, val xValue: String, val yValue: String)
-    val effectInfo = remember(effectMode, currentX, currentY) {
-        when (effectMode) {
+    val focusedEffectMode = if (focusedSlot == 0) effectModeA else effectModeB
+    val focusedWetMix = if (focusedSlot == 0) wetMixA else wetMixB
+    val showMixOverlay = focusedEffectMode >= 0
+
+    val effectInfo = remember(focusedEffectMode, currentX, currentY) {
+        when (focusedEffectMode) {
             0 -> { // Filter
                 val freq = 20.0 * Math.pow(1000.0, currentX.toDouble())
                 val res = currentY * 0.95
@@ -107,8 +131,8 @@ fun XYPad(
     }
 
     // Colors based on effect mode
-    val themeColor = remember(effectMode) {
-        when (effectMode) {
+    fun effectColor(mode: Int): Color {
+        return when (mode) {
             0 -> FilterOrange
             1 -> DelayCyan
             2 -> ReverbPurple
@@ -119,6 +143,7 @@ fun XYPad(
         }
     }
 
+    val themeColor = remember(focusedEffectMode) { effectColor(focusedEffectMode) }
     val gridColor = themeColor.copy(alpha = 0.3f)
     val crosshairColor = themeColor.copy(alpha = 0.6f)
 
@@ -275,6 +300,123 @@ fun XYPad(
                 style = MaterialTheme.typography.labelLarge,
                 color = themeColor
             )
+        }
+
+        if (showMixOverlay) {
+            val colorA = effectColor(effectModeA)
+            val colorB = effectColor(effectModeB)
+
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(10.dp)
+                    .zIndex(1f),
+                contentAlignment = Alignment.BottomCenter
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            color = MaterialTheme.colorScheme.surface.copy(alpha = 0.8f),
+                            shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp)
+                        )
+                        .padding(horizontal = 12.dp, vertical = 8.dp)
+                ) {
+                    Text(
+                        text = "Wet Mix (${if (focusedSlot == 0) "A" else "B"})",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+
+                    androidx.compose.foundation.layout.Spacer(
+                        modifier = Modifier.height(6.dp)
+                    )
+
+                    androidx.compose.foundation.layout.Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 6.dp)
+                    ) {
+                        if (effectModeA >= 0) {
+                            androidx.compose.foundation.layout.Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = "A",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = colorA,
+                                    modifier = Modifier.width(16.dp)
+                                )
+                                androidx.compose.foundation.layout.BoxWithConstraints(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .height(8.dp)
+                                        .background(
+                                            color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                                            shape = androidx.compose.foundation.shape.RoundedCornerShape(6.dp)
+                                        )
+                                ) {
+                                    val fullWidth = maxWidth
+                                    androidx.compose.foundation.layout.Box(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .width(fullWidth * wetMixA.coerceIn(0f, 1f))
+                                            .background(colorA.copy(alpha = 0.7f))
+                                    )
+                                }
+                            }
+                        }
+
+                        if (effectModeA >= 0 && effectModeB >= 0) {
+                            androidx.compose.foundation.layout.Spacer(
+                                modifier = Modifier.height(6.dp)
+                            )
+                        }
+
+                        if (effectModeB >= 0) {
+                            androidx.compose.foundation.layout.Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = "B",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = colorB,
+                                    modifier = Modifier.width(16.dp)
+                                )
+                                androidx.compose.foundation.layout.BoxWithConstraints(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .height(8.dp)
+                                        .background(
+                                            color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                                            shape = androidx.compose.foundation.shape.RoundedCornerShape(6.dp)
+                                        )
+                                ) {
+                                    val fullWidth = maxWidth
+                                    androidx.compose.foundation.layout.Box(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .width(fullWidth * wetMixB.coerceIn(0f, 1f))
+                                            .background(colorB.copy(alpha = 0.7f))
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+                    androidx.compose.material3.Slider(
+                        value = focusedWetMix.coerceIn(0f, 1f),
+                        onValueChange = onFocusedWetMixChanged,
+                        valueRange = 0f..1f,
+                        colors = androidx.compose.material3.SliderDefaults.colors(
+                            thumbColor = themeColor,
+                            activeTrackColor = themeColor
+                        )
+                    )
+                }
+            }
         }
     }
 }

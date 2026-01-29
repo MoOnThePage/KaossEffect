@@ -28,6 +28,10 @@ Delay — X: Delay time (10ms–500ms), Y: Feedback (0–90%)
 Bitcrusher — X: Bit depth (2–16 bits), Y: Sample rate reduction (1x–16x)
 Flanger — X: Rate (0.1Hz–10Hz), Y: Depth (0–100%)
 
+Effect Chaining
+
+Two effect slots (A → B) with per-slot bypass and wet mix. XY control targets the focused slot only; mix controls appear as an overlay on the XY pad when both slots are enabled.
+
 User Interface
 
 Modern Material 3 design using Jetpack Compose
@@ -138,4 +142,3 @@ Parameter Smoothing
 
 Raw XY values smoothed with one-pole filter to prevent zipper noise
 Smoothing coefficient ~0.99 for 1ms time constant at 44.1kHz
-

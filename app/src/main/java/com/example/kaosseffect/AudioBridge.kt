@@ -7,8 +7,9 @@ object AudioBridge {
 
     private external fun nativeStart()
     private external fun nativeStop()
-    private external fun nativeSetXY(x: Float, y: Float)
-    private external fun nativeSetEffectMode(mode: Int)
+    private external fun nativeSetXY(slot: Int, x: Float, y: Float)
+    private external fun nativeSetEffectMode(slot: Int, mode: Int)
+    private external fun nativeSetWetMix(slot: Int, mix: Float)
     private external fun nativeIsPlaying(): Boolean
     
     private external fun nativeLoadFile(fd: Int, offset: Long, size: Long): Boolean
@@ -63,12 +64,16 @@ object AudioBridge {
         return nativeGetVisualizerData(buffer)
     }
 
-    fun setXY(x: Float, y: Float) {
-        nativeSetXY(x, y)
+    fun setXY(slot: Int, x: Float, y: Float) {
+        nativeSetXY(slot, x, y)
     }
 
-    fun setEffectMode(mode: Int) {
-        nativeSetEffectMode(mode)
+    fun setEffectMode(slot: Int, mode: Int) {
+        nativeSetEffectMode(slot, mode)
+    }
+
+    fun setWetMix(slot: Int, mix: Float) {
+        nativeSetWetMix(slot, mix)
     }
 
     fun isPlaying(): Boolean {

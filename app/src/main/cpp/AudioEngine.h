@@ -13,6 +13,7 @@
 #include <memory>
 #include <mutex>
 #include <oboe/Oboe.h>
+#include <vector>
 
 class AudioEngine : public oboe::AudioStreamCallback {
 public:
@@ -20,8 +21,9 @@ public:
 
   void startStream();
   void stopStream();
-  void setXY(float x, float y);
-  void setEffectMode(int mode);
+  void setXY(int slot, float x, float y);
+  void setEffectMode(int slot, int mode);
+  void setWetMix(int slot, float mix);
   bool isPlaying();
 
   // Playback controls
@@ -44,9 +46,14 @@ private:
   ~AudioEngine();
 
   std::shared_ptr<oboe::AudioStream> stream_;
-  std::atomic<float> paramX_{0.5f};
-  std::atomic<float> paramY_{0.5f};
-  std::atomic<int> effectMode_{0};
+  std::atomic<float> paramAX_{0.5f};
+  std::atomic<float> paramAY_{0.5f};
+  std::atomic<float> paramBX_{0.5f};
+  std::atomic<float> paramBY_{0.5f};
+  std::atomic<int> effectModeA_{-1};
+  std::atomic<int> effectModeB_{-1};
+  std::atomic<float> wetMixA_{1.0f};
+  std::atomic<float> wetMixB_{1.0f};
   std::atomic<bool> isPlaying_{false};
 
   // Decoder
@@ -69,6 +76,7 @@ private:
   std::mutex visualizerMutex_;
   static constexpr int kVisualizerBufferSize = 256;
   std::atomic<int> visualizerSampleCount_{0};
+  std::vector<float> mixBuffer_;
 
   static constexpr int kSampleRate = 44100;
   static constexpr int kChannelCount = 2;

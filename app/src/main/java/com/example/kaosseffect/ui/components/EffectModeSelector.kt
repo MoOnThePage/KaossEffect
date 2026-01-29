@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonDefaults
@@ -48,14 +49,14 @@ fun EffectModeSelector(
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+            .padding(horizontal = 16.dp, vertical = 2.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp)
     ) {
         val rows = modes.chunked(3)
         rows.forEachIndexed { rowIndex, rowModes ->
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
                 rowModes.forEachIndexed { colIndex, title ->
                     val index = rowIndex * 3 + colIndex
@@ -64,7 +65,9 @@ fun EffectModeSelector(
 
                     OutlinedButton(
                         onClick = { onModeSelected(index) },
-                        modifier = Modifier.weight(1f),
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(32.dp),
                         shape = RoundedCornerShape(8.dp),
                         colors = ButtonDefaults.outlinedButtonColors(
                             containerColor = if (isSelected) color.copy(alpha = 0.2f) else Color.Transparent,
@@ -75,11 +78,11 @@ fun EffectModeSelector(
                                 if (isSelected) color else MaterialTheme.colorScheme.outline
                             )
                         ),
-                        contentPadding = PaddingValues(0.dp)
+                        contentPadding = PaddingValues(vertical = 2.dp)
                     ) {
                         Text(
                             text = title,
-                            fontSize = 12.sp, // Slightly larger font since we have more space
+                            fontSize = 10.sp,
                             fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
                             maxLines = 1
                         )

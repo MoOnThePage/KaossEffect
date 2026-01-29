@@ -92,9 +92,10 @@ Java_com_example_kaosseffect_AudioBridge_nativeGetPositionMs(
 extern "C" JNIEXPORT void JNICALL
 Java_com_example_kaosseffect_AudioBridge_nativeSetXY(JNIEnv *env,
                                                      jobject /* this */,
-                                                     jfloat x, jfloat y) {
+                                                     jint slot, jfloat x,
+                                                     jfloat y) {
   try {
-    AudioEngine::getInstance()->setXY(x, y);
+    AudioEngine::getInstance()->setXY(slot, x, y);
   } catch (...) {
   }
 }
@@ -102,9 +103,21 @@ Java_com_example_kaosseffect_AudioBridge_nativeSetXY(JNIEnv *env,
 extern "C" JNIEXPORT void JNICALL
 Java_com_example_kaosseffect_AudioBridge_nativeSetEffectMode(JNIEnv *env,
                                                              jobject /* this */,
+                                                             jint slot,
                                                              jint mode) {
   try {
-    AudioEngine::getInstance()->setEffectMode(mode);
+    AudioEngine::getInstance()->setEffectMode(slot, mode);
+  } catch (...) {
+  }
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_kaosseffect_AudioBridge_nativeSetWetMix(JNIEnv *env,
+                                                         jobject /* this */,
+                                                         jint slot,
+                                                         jfloat mix) {
+  try {
+    AudioEngine::getInstance()->setWetMix(slot, mix);
   } catch (...) {
   }
 }

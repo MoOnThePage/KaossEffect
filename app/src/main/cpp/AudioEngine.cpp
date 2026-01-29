@@ -1,4 +1,5 @@
 #include "AudioEngine.h"
+#include <algorithm>
 #include <android/log.h>
 #include <cmath>
 
@@ -48,6 +49,11 @@ void AudioEngine::startStream() {
     return;
   }
 
+  const int32_t capacityFrames = stream_->getBufferCapacityInFrames();
+  if (capacityFrames > 0) {
+    mixBuffer_.resize(capacityFrames * kChannelCount, 0.0f);
+  }
+
   __android_log_print(ANDROID_LOG_INFO, TAG, "Stream started");
 }
 
@@ -60,12 +66,32 @@ void AudioEngine::stopStream() {
   __android_log_print(ANDROID_LOG_INFO, TAG, "Stream stopped");
 }
 
-void AudioEngine::setXY(float x, float y) {
-  paramX_.store(x);
-  paramY_.store(y);
+void AudioEngine::setXY(int slot, float x, float y) {
+  if (slot == 0) {
+    paramAX_.store(x);
+    paramAY_.store(y);
+  } else {
+    paramBX_.store(x);
+    paramBY_.store(y);
+  }
 }
 
-void AudioEngine::setEffectMode(int mode) { effectMode_.store(mode); }
+void AudioEngine::setEffectMode(int slot, int mode) {
+  if (slot == 0) {
+    effectModeA_.store(mode);
+  } else {
+    effectModeB_.store(mode);
+  }
+}
+
+void AudioEngine::setWetMix(int slot, float mix) {
+  float clamped = std::min(1.0f, std::max(0.0f, mix));
+  if (slot == 0) {
+    wetMixA_.store(clamped);
+  } else {
+    wetMixB_.store(clamped);
+  }
+}
 
 bool AudioEngine::isPlaying() { return isPlaying_.load(); }
 
@@ -183,32 +209,73 @@ AudioEngine::onAudioReady(oboe::AudioStream *audioStream, void *audioData,
     }
   }
 
-  // Effect processing
-  int mode = effectMode_.load();
-  float x = paramX_.load();
-  float y = paramY_.load();
+  auto processEffectMode = [&](int mode, float x, float y, int frames) {
+    if (mode == 0 && filter_) { // Filter
+      filter_->setParameters(x, y);
+      filter_->process(outputData, frames, kChannelCount);
+    } else if (mode == 1 && chorus_) { // Chorus
+      chorus_->setParameters(x, y);
+      chorus_->process(outputData, frames, kChannelCount);
+    } else if (mode == 2 && reverb_) { // Reverb
+      reverb_->setParameters(x, y);
+      reverb_->process(outputData, frames, kChannelCount);
+    } else if (mode == 3 && phaser_) { // Phaser
+      phaser_->setParameters(x, y);
+      phaser_->process(outputData, frames, kChannelCount);
+    } else if (mode == 4 && bitcrusher_) { // Bitcrusher
+      bitcrusher_->setParameters(x, y);
+      bitcrusher_->process(outputData, frames, kChannelCount);
+    } else if (mode == 5 && ringMod_) { // RingMod
+      ringMod_->setParameters(x, y);
+      ringMod_->process(outputData, frames, kChannelCount);
+    }
+  };
 
-  if (mode == 0 && filter_) { // Filter
-    filter_->setParameters(x, y);
-    filter_->process(outputData, samplesRead / kChannelCount, kChannelCount);
-  } else if (mode == 1 && chorus_) { // Chorus
-    chorus_->setParameters(x, y);
-    chorus_->process(outputData, samplesRead / kChannelCount, kChannelCount);
-  } else if (mode == 2 && reverb_) { // Reverb
-    reverb_->setParameters(x, y);
-    reverb_->process(outputData, samplesRead / kChannelCount, kChannelCount);
-  } else if (mode == 3 && phaser_) { // Phaser
-    phaser_->setParameters(x, y);
-    phaser_->process(outputData, samplesRead / kChannelCount, kChannelCount);
-  } else if (mode == 4 && bitcrusher_) { // Bitcrusher
-    bitcrusher_->setParameters(x, y);
-    bitcrusher_->process(outputData, samplesRead / kChannelCount,
-                         kChannelCount);
-  } else if (mode == 5 && ringMod_) { // RingMod
-    ringMod_->setParameters(x, y);
-    ringMod_->process(outputData, samplesRead / kChannelCount, kChannelCount);
-  } else {
-    // Passthrough
+  const int framesRead = samplesRead / kChannelCount;
+  if (framesRead > 0) {
+    const int sampleCount = framesRead * kChannelCount;
+
+    const int modeA = effectModeA_.load();
+    const float wetA = wetMixA_.load();
+    const float ax = paramAX_.load();
+    const float ay = paramAY_.load();
+
+    if (modeA >= 0 && wetA > 0.0f) {
+      if (wetA < 1.0f) {
+        if ((int)mixBuffer_.size() < sampleCount) {
+          mixBuffer_.resize(sampleCount, 0.0f);
+        }
+        std::copy(outputData, outputData + sampleCount, mixBuffer_.begin());
+      }
+      processEffectMode(modeA, ax, ay, framesRead);
+      if (wetA < 1.0f) {
+        for (int i = 0; i < sampleCount; ++i) {
+          const float dry = mixBuffer_[i];
+          outputData[i] = dry + (outputData[i] - dry) * wetA;
+        }
+      }
+    }
+
+    const int modeB = effectModeB_.load();
+    const float wetB = wetMixB_.load();
+    const float bx = paramBX_.load();
+    const float by = paramBY_.load();
+
+    if (modeB >= 0 && wetB > 0.0f) {
+      if (wetB < 1.0f) {
+        if ((int)mixBuffer_.size() < sampleCount) {
+          mixBuffer_.resize(sampleCount, 0.0f);
+        }
+        std::copy(outputData, outputData + sampleCount, mixBuffer_.begin());
+      }
+      processEffectMode(modeB, bx, by, framesRead);
+      if (wetB < 1.0f) {
+        for (int i = 0; i < sampleCount; ++i) {
+          const float dry = mixBuffer_[i];
+          outputData[i] = dry + (outputData[i] - dry) * wetB;
+        }
+      }
+    }
   }
 
   // Soft Clipper (tanh-like limiting) to prevent harsh digital clipping
