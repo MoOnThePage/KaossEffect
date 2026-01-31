@@ -1,5 +1,41 @@
 # Project exclude paths
-/.gradle/
-/app/build/
-/build/
-/app/.cxx/
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART
+*.dex
+
+# Jave class files
+.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Filesm
+*.log
+
+# Android Studio cpatures folder
+captures/
+
+# IntelliJ
+*.iml
+*.idea/
+*.idea/workspace.xml
+*.idea/tasks.xml
+*.idea/gradle.xml
+*.idea/assetWizardSettings.xml
+*.idea/dictionaries
+*.idea/libraries
